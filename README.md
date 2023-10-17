@@ -6,8 +6,8 @@
 
 ## About The Project
 
-![Screen Shot](https://socialify.git.ci/anas20023/Ecobazar-Ecomerce-Site-Full-Responsive-/image?description=1&descriptionEditable=This%20Is%20an%20e-commerce%20Website.%20It%20is%20now%20under%20development.&forks=1&issues=1&language=1&name=1&pattern=Charlie%20Brown&pulls=1&stargazers=1&theme=Light)
-![Screen Shots](https://imagizer.imageshack.com/img924/3379/tfTfFj.jpg)
+
+![Screen Shots](https://yourimageshare.com/ib/gLiycnaDqq)
 
 Ecobazar-Ecomerce-Site
 
