@@ -289,4 +289,251 @@
     font-weight: 500;
     margin-left: 5px;
   }
+  .container {
+    width: 90%;
+    max-width: 1150px;
+    margin: 0 auto;
+    padding: 20px px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .logo {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+  }
+  .logo_img {
+    max-width: 20px;
+    max-height: 20px;
+  }
+  .logo_h {
+    font-size: 15px;
+    font-weight: 600;
+    color: #002603;
+    margin-left: 5px;
+  }
+  /* Search Bar */
+  .search {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .search_input {
+    width: 70%;
+    max-width: 250px;
+    height: 40px;
+    border: 1px solid #333333;
+    border-radius: 3px;
+    padding: 0 10px;
+    font-size: 14px;
+    font-weight: 400;
+    color: #333333;
+  }
+  .search_btn {
+    width: 45px;
+    height: 40px;
+    background: #00b207;
+    border: none;
+    border-radius: 0px 3px 3px 0px;
+    margin-left: -4px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+  }
+
+  /* Add To Cart */
+  .loved {
+    display: none;
+  }
+  .line {
+    display: none;
+  }
+  .s_cart_h {
+    display: none;
+  }
+  .price {
+    text-align: right;
+  }
+  .addto_cart {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .scart {
+    float: right;
+    width: 90px;
+    margin-left: -20px;
+  }
+  .cart_count {
+    display: flex;
+    margin: 0px -22px;
+    padding: 0px 10px;
+  }
+}
+
+/* Third Break Point */
+
+@media (min-width: 768px) and (max-width: 1210px) {
+  .location_login {
+    padding: 10px 0;
+    width: 90%;
+    height: 42px;
+    max-width: 1150px;
+    margin: 0 auto;
+  }
+  .location {
+    float: left;
+    width: 50%;
+  }
+  .loc_ico {
+    text-decoration: none;
+  }
+  .loc_i {
+    color: #333333;
+  }
+  .loc_txt {
+    display: inline-block;
+    font-size: 12px;
+    color: #333333;
+    margin-left: 8px;
+    font-weight: 400;
+  }
+  /* Select , Login , Sign Up Section */
+
+  .sign_sec {
+    float: right;
+    width: 50%;
+    text-align: right;
+  }
+  .slct {
+    border: none;
+    margin: 0 10px;
+    font-size: 12px;
+    background-color: #fff;
+  }
+  .login {
+    color: #002603;
+    padding: 8px 15px;
+    border-radius: 3px;
+    font-size: 12px;
+    font-weight: 500;
+    margin-left: 10px;
+  }
+  /* Logo,Search Section */
+
+  .container {
+    width: 90%;
+    max-width: 1150px;
+    margin: 0 auto;
+    padding: 20px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .logo {
+    display: flex;
+    align-items: center;
+  }
+  .logo_img {
+    max-width: 30px;
+    max-height: 30px;
+  }
+  .logo_h {
+    font-size: 20px;
+    font-weight: 600;
+    color: #002603;
+    margin-left: 10px;
+  }
+  /* Search Bar */
+  .search {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .search_input {
+    width: 60%;
+    max-width: 450px;
+    height: 40px;
+    border: 1px solid #333333;
+    border-radius: 3px;
+    padding: 0 10px;
+    font-size: 14px;
+    font-weight: 400;
+    color: #333333;
+  }
+  .search_btn {
+    width: 50px;
+    height: 40px;
+    background: #00b207;
+    border: none;
+    border-radius: 3px;
+    margin-left: -4px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+  }
+
+  /* Add To Cart */
+  .addto_cart {
+    display: flex;
+    align-items: center;
+  }
+  .loved {
+    font-size: 30px;
+    font-weight: 400;
+    margin-right: 10px;
+  }
+  .line {
+    width: 1px;
+    height: 30px;
+    background: #333333;
+    margin: 10px 10px 10px 0px;
+  }
+  .cart_count {
+    display: flex;
+    margin: 0px 10px;
+  }
+  .heart_icon {
+    text-decoration: none;
+    color: #333333;
+  }
+  .cartico {
+    font-size: 30px;
+  }
+  .count {
+    width: 20px;
+    height: 20px;
+    background: #00b207;
+    border-radius: 50%;
+    color: #fff;
+    font-size: 12px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: -10px;
+    margin-top: -5px;
+  }
+  .scart {
+    float: right;
+    width: 90px;
+  }
+  .s_cart_h {
+    font-size: 12px;
+    font-weight: 400;
+  }
+  .price {
+    font-size: 14px;
+    font-weight: 600;
+    color: #333333;
+  }
 }
