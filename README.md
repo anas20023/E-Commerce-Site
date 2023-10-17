@@ -37,4 +37,4 @@ This Website Could be used for any E-commerce Platform.
 
 * [Anas Ibn Belal](https://github.com/anas20023/)
 
-Visit The Site: https://anas20023.github.io/Ecobazar-Ecomerce-Site-Full-Responsive-/
+[Visit The Site] (https://anas20023.github.io/E-Commerce-Site/)
