@@ -7,7 +7,7 @@
 ## About The Project
 
 
-![Screen Shots](https://imageupload.io/0ZIBWUbS1cQoRYg)
+![Screen Shots](https://imagizer.imageshack.com/img923/3851/4TbnyA.jpg)
 
 Ecobazar-Ecomerce-Site
 
@@ -20,10 +20,10 @@ Full Features will be added sooooon
 
 
 
- *[HTML]
- *[CSS]
- *[JS]
- *[MERN]
+ * **HTML**
+ * **CSS**
+ * **JS**
+ * **MERN**
 
 ## Usage
 
