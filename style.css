@@ -103,7 +103,7 @@ hr {
   height: 40px;
   background: #00b207;
   border: none;
-  border-radius: 3px;
+  border-radius: 0px 3px 3px 0px;
   margin-left: -4px;
   color: #fff;
   display: flex;
@@ -268,7 +268,7 @@ ul li a:hover, .active_home {
     height: 40px;
     background: #00b207;
     border: none;
-    border-radius: 3px;
+    border-radius: 0px 3px 3px 0px;
     margin-left: -4px;
     color: #fff;
     display: flex;
@@ -512,7 +512,7 @@ ul li a:hover, .active_home {
     height: 40px;
     background: #00b207;
     border: none;
-    border-radius: 3px;
+    border-radius: 0px 3px 3px 0px;
     margin-left: -4px;
     color: #fff;
     display: flex;
