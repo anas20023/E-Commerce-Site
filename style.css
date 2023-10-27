@@ -197,7 +197,8 @@ a {
 ul li {
   padding: 15px 20px;
 }
-ul li a:hover, .active_home {
+ul li a:hover,
+.active_home {
   color: #fff;
 }
 .nav_arr {
@@ -205,8 +206,7 @@ ul li a:hover, .active_home {
 }
 
 /* Call To Action On Top */
-.call_now_top
-{
+.call_now_top {
   width: 150px;
   height: 50px;
   color: #ffff;
@@ -214,7 +214,6 @@ ul li a:hover, .active_home {
   align-items: center;
   justify-content: center;
   margin-left: 400px;
-  
 }
 
 /* Responsive Design */
@@ -588,5 +587,46 @@ ul li a:hover, .active_home {
     font-size: 14px;
     font-weight: 600;
     color: #333333;
+  }
+  /* Navigation Bar Starts Here */
+  .nav_cont {
+    width: 100%;
+    margin: 0 auto;
+    height: 50px;
+    display: flex;
+    background: #1a1a1a;
+    box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.1);
+  }
+
+  .navbar {
+    width: 90%;
+    max-width: 1150px;
+    margin: 0 auto;
+    padding: 10px 0px;
+    display: flex;
+    align-items: center;
+    background: #1a1a1a;
+  }
+  ul li,
+  a {
+    list-style: none;
+    text-decoration: none;
+    color: #999999;
+    font-size: 10px;
+    font-weight: 400;
+    display: inline-block;
+  }
+  ul li {
+    padding: 4px 6px;
+  }
+  /* Call To Action On Top */
+  .call_now_top {
+    width: 100px;
+    height: 50px;
+    color: #ffff;
+    display: flex;
+    align-items: right;
+    justify-content: right;
+    margin-left: 210px;
   }
 }
