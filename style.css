@@ -170,13 +170,14 @@ hr {
 /* Navigation Bar Starts Here */
 .nav_cont {
   width: 100%;
+  margin: 0 auto;
   height: 50px;
   display: flex;
   background: #1a1a1a;
   box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.1);
 }
 .navbar {
-  width: 90%;
+  width: 100%;
   max-width: 1200px;
   margin: 0 auto;
   padding: 20px 0px;
@@ -201,6 +202,19 @@ ul li a:hover, .active_home {
 }
 .nav_arr {
   margin-left: 5px;
+}
+
+/* Call To Action On Top */
+.call_now_top
+{
+  width: 150px;
+  height: 50px;
+  color: #ffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 400px;
+  
 }
 
 /* Responsive Design */
