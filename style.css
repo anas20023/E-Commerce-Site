@@ -213,7 +213,12 @@ ul li a:hover,
   color: #ffff;
   display: flex;
   align-items: center;
-  
+}
+.call_now {
+  color: #fff;
+}
+.call_ico {
+  margin-right: 5px;
 }
 
 /* Responsive Design */
@@ -318,7 +323,30 @@ ul li a:hover,
     margin: 0px -22px;
     padding: 0px 10px;
   }
+  .navbar ul li {
+    list-style: none;
+    text-decoration: none;
+    color: #999999;
+    font-size: 10px;
+    font-weight: 400;
+    display: none;
+  }
+  .call_now_top
+  {
+    justify-content: center;
+  }
+  .call_now
+  {
+    font-size: 12px;
+  }
+  .nmbr {
+    display: none;
+  }
+  .call_ico {
+    display: block;
+  }
 }
+/* End Of First Break Point  */
 
 /* Second Break Point */
 @media (min-width: 576px) and (max-width: 767.98px) {
@@ -430,9 +458,9 @@ ul li a:hover,
     list-style: none;
     text-decoration: none;
     color: #999999;
-    font-size: 14px;
+    font-size: 12px;
     font-weight: 400;
-    display: inline-block;
+    display: none;
   }
 }
 
