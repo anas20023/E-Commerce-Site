@@ -10,7 +10,7 @@
   padding: 10px 0;
   width: 90%;
   height: 42px;
-  max-width: 1150px;
+  max-width: 1320px;
   margin: 0 auto;
 }
 .location {
@@ -58,7 +58,7 @@ hr {
 
 .container {
   width: 100%;
-  max-width: 1150px;
+  max-width: 1320px;
   margin: 0 auto;
   padding: 20px 0px;
   display: flex;
@@ -177,10 +177,10 @@ hr {
   box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.1);
 }
 .navbar {
-  width: 100%;
-  max-width: 1200px;
-  margin: 0 auto;
+  width: 90%;
+  max-width: 1320px;
   padding: 20px 0px;
+  margin: 0 auto;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -196,7 +196,7 @@ a {
   display: inline-block;
 }
 ul li {
-  padding: 15px 20px;
+  padding: 15px 15px;
 }
 ul li a:hover,
 .active_home {
@@ -219,6 +219,17 @@ ul li a:hover,
 }
 .call_ico {
   margin-right: 5px;
+}
+
+/* Top Image Slider */
+
+.image_top_Slider {
+  width: 90%;
+  max-width: 1320px;
+  height: 605px;
+  margin: 0 auto;
+  display: grid;
+ /* background-color: #1a1a1a;*/
 }
 
 /* Responsive Design */
@@ -331,12 +342,10 @@ ul li a:hover,
     font-weight: 400;
     display: none;
   }
-  .call_now_top
-  {
+  .call_now_top {
     justify-content: center;
   }
-  .call_now
-  {
+  .call_now {
     font-size: 12px;
   }
   .nmbr {
