@@ -168,10 +168,6 @@ hr {
 }
 
 /* Navigation Bar Starts Here */
-.r_bar
-{
-  display: none;
-}
 .nav_cont {
   width: 100%;
   margin: 0 auto;
@@ -187,6 +183,7 @@ hr {
   padding: 20px 0px;
   display: flex;
   align-items: center;
+  justify-content: space-between;
   background: #1a1a1a;
 }
 ul li,
@@ -216,8 +213,7 @@ ul li a:hover,
   color: #ffff;
   display: flex;
   align-items: center;
-  justify-content: center;
-  margin-left: 400px;
+  
 }
 
 /* Responsive Design */
