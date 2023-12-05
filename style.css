@@ -367,6 +367,12 @@ ul li a:hover,
   .call_ico {
     display: block;
   }
+  .image_top_Slider
+{
+  width: 80%;
+  max-width: 640px;
+  margin: 10px auto;
+}
 }
 /* End Of First Break Point  */
 
