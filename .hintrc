@@ -4,6 +4,7 @@
   ],
   "hints": {
     "axe/forms": "off",
-    "axe/name-role-value": "off"
+    "axe/name-role-value": "off",
+    "no-inline-styles": "off"
   }
 }

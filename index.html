@@ -1,112 +1,118 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.min.js"
-      integrity="sha512-WW8/jxkELe2CAiE4LvQfwm1rajOS8PHasCCx+knHG0gBHt8EXxS6T6tJRTGuDQVnluuAvMxWF4j8SNFDKceLFg=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"></script>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
-      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="style.css" />
-    <title>Ecobazar &nbsp; Home</title>
-  </head>
-  <header>
-    <!-- Top Location and Login SignUp Section -->
-    <div class="location_login">
-      <div class="location">
-        <a
-          href="https://maps.app.goo.gl/sXUpuHKUYU8vfPZD6"
-          target="_blank"
-          class="loc_ico"
-          rel="noopener">
-          <i class="fa-solid fa-location-dot loc_i"></i>
-          <h5 class="loc_txt">Lincoln- 344, Illinois, Chicago, USA</h5></a
-        >
-      </div>
-      <!-- Login/Sign UP -->
-      <div class="sign_sec">
-        <select name="" id="" class="slct">
-          <option value="english">Eng</option>
-          <option value="bangla">BAN</option>
-        </select>
-        <select name="" id="" class="slct">
-          <option value="usd">USD</option>
-          <option value="tk">Taka</option>
-        </select>
-        <a href="#" class="login" id="button" onclick="login_div()">Login / Sign Up</a>
-      </div>
-    </div>
-    <hr />
 
-    <!-- Top Logo, Search Section -->
-    <div class="container">
-      <a href="#">
-        <div class="logo">
-          <img src="./img/logo.png" class="logo_img" alt="logo" />
-          <h1 class="logo_h">Ecobazar</h1>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.min.js"
+    integrity="sha512-WW8/jxkELe2CAiE4LvQfwm1rajOS8PHasCCx+knHG0gBHt8EXxS6T6tJRTGuDQVnluuAvMxWF4j8SNFDKceLFg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="/output/tailwind.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+  <title>Ecobazar &nbsp; Home</title>
+</head>
+<header>
+  <!-- Top Location and Login SignUp Section -->
+  <div class="location_login">
+    <div class="location">
+      <a href="https://maps.app.goo.gl/sXUpuHKUYU8vfPZD6" target="_blank" class="loc_ico" rel="noopener">
+        <i class="fa-solid fa-location-dot loc_i"></i>
+        <h5 class="loc_txt">Lincoln- 344, Illinois, Chicago, USA</h5>
+      </a>
+    </div>
+    <!-- Login/Sign UP -->
+    <div class="sign_sec">
+      <select name="" id="" class="slct">
+        <option value="english">Eng</option>
+        <option value="bangla">BAN</option>
+      </select>
+      <select name="" id="" class="slct">
+        <option value="usd">USD</option>
+        <option value="tk">Taka</option>
+      </select>
+      <a href="#" class="login" id="button" onclick="login_div()">Login / Sign Up</a>
+    </div>
+  </div>
+  <hr />
+
+  <!-- Top Logo, Search Section -->
+  <div class="container">
+    <a href="#">
+      <div class="logo">
+        <img src="./img/logo.png" class="logo_img" alt="logo" />
+        <h1 class="logo_h">Ecobazar</h1>
+      </div>
+    </a>
+    <div class="search">
+      <input type="text" class="search_input" placeholder="Search" />
+      <button class="search_btn"><i class="fas fa-search"></i></button>
+    </div>
+    <div class="addto_cart">
+      <a href="#" class="heart_icon">
+        <i class="fa-regular fa-heart loved"></i></a>
+      <div class="line"></div>
+      <a href="#" class="heart_icon">
+        <div class="cart_count">
+          <i class="fa-solid fa-basket-shopping cartico"></i>
+          <span class="count">3</span>
         </div>
       </a>
-      <div class="search">
-        <input type="text" class="search_input" placeholder="Search" />
-        <button class="search_btn"><i class="fas fa-search"></i></button>
-      </div>
-      <div class="addto_cart">
-        <a href="#" class="heart_icon">
-          <i class="fa-regular fa-heart loved"></i
-        ></a>
-        <div class="line"></div>
-        <a href="#" class="heart_icon">
-          <div class="cart_count">
-            <i class="fa-solid fa-basket-shopping cartico"></i>
-            <span class="count">3</span>
-          </div>
-        </a>
-        <div class="scart">
-          <p class="s_cart_h">Shooping cart:</p>
-          <h2 class="price">$57.00</h2>
-        </div>
+      <div class="scart">
+        <p class="s_cart_h">Shooping cart:</p>
+        <h2 class="price">$57.00</h2>
       </div>
     </div>
-  </header>
-  <body>
-    <div class="nav_cont">
-      <nav class="navbar">
-        <ul>
-          <li>
-            <a href="#" class="active_home"
-              >Home <i class="fa-solid fa-angle-down nav_arr active_home"></i
-            ></a>
-          </li>
-          <li>
-            <a href="#">Shop <i class="fa-solid fa-angle-down nav_arr"></i></a>
-          </li>
-          <li>
-            <a href="#">Pages <i class="fa-solid fa-angle-down nav_arr"></i></a>
-          </li>
-          <li>
-            <a href="#">Blog <i class="fa-solid fa-angle-down nav_arr"></i></a>
-          </li>
-          <li><a href="#">About Us </a></li>
-          <li><a href="#">Contact Us</a></li>
-        </ul>
-        <div class="call_now_top">
-          <a href="tel:+(219) 555-0114" class="call_now"
-            ><i class="fa-solid fa-phone call_ico"></i
-            ><span class="nmbr">(219) 555-0114</span></a
-          >
-        </div>
-      </nav>
+  </div>
+</header>
+
+<body>
+  <div class="nav_cont">
+    <nav class="navbar">
+      <ul>
+        <li>
+          <a href="#" class="active_home">Home <i class="fa-solid fa-angle-down nav_arr active_home"></i></a>
+        </li>
+        <li>
+          <a href="#">Shop <i class="fa-solid fa-angle-down nav_arr"></i></a>
+        </li>
+        <li>
+          <a href="#">Pages <i class="fa-solid fa-angle-down nav_arr"></i></a>
+        </li>
+        <li>
+          <a href="#">Blog <i class="fa-solid fa-angle-down nav_arr"></i></a>
+        </li>
+        <li><a href="#">About Us </a></li>
+        <li><a href="#">Contact Us</a></li>
+      </ul>
+      <div class="call_now_top">
+        <a href="tel:+(219) 555-0114" class="call_now"><i class="fa-solid fa-phone call_ico"></i><span
+            class="nmbr">(219) 555-0114</span></a>
+      </div>
+    </nav>
+  </div>
+
+  <!-- Slider Section -->
+
+  <div class="image_top_Slider flex flex-row max-w-screen-xl w-full justify-between mx-auto items-start mt-2 gap-2">
+    <div class="sec_1 w-4/6 h-full rounded-lg flex flex-col justify-center items-start p-20">
+      <h3 class="text-white text-left text-5xl font-semibold">Fresh & Healthy<br>Organic Food</h3>
+      <div class="flex flex-col justify-center items-start my-5 px-3 border-l-2 border-gray-100 gap-2">
+          <h4 class="text-white text-lg">Sale up to <span class="bg-red-600 p-2">30% OFF</span></h4>
+          <p class="text-lg text-white font-light">Free shipping on all your order</p>
+      </div>
+      <a class="bg-white text-green-500 p-5 rounded-full w-48" href="#">Shop now <i class="fa-solid fa-arrow-right" style="color: #00f068;"></i></a>
     </div>
-    <div class="image_top_Slider">
-      
+    <div class="h-full">
+      <div class="sec_2 w-full h-1/2"></div>
+      <div class="sec_3 w-full h-1/2"></div>
     </div>
-    <script src="script.js"></script>
-  </body>
+
+  </div>
+  <!-- End of Slider Section -->
+  <script src="script.js"></script>
+</body>
+
 </html>
