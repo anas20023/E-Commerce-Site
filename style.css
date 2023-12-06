@@ -228,6 +228,11 @@ ul li a:hover,
   max-width: 1280px;
   height: 500px;
 }
+.center_d {
+  width: 90%;
+  max-width: 1280px;
+  margin: 0 auto;
+}
 .sec_1 {
   background-size: cover;
   background-image: url(./img/head_img_1.jpg);
@@ -364,7 +369,7 @@ ul li a:hover,
     display: block;
   }
   .image_top_Slider {
-    width: 80%;
+    width: 90%;
     max-width: 640px;
     margin: 10px auto;
   }
