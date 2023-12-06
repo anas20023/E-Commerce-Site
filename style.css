@@ -255,6 +255,12 @@ ul li a:hover,
   height: 102px;
   width: 136px;
 }
+.sec_p_img
+{
+  height: 190px;
+  width: 250px;
+  object-fit: cover;
+}
 
 /* Responsive Design */
 @media (max-width: 575.98px) {
