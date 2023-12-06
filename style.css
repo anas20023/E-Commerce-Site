@@ -491,6 +491,12 @@ ul li a:hover,
     font-weight: 400;
     display: none;
   }
+  .image_top_Slider {
+    width: 90%;
+    padding: 25px;
+    max-width: 640px;
+    margin: 10px auto;
+  }
 }
 
 /* Third Break Point */
