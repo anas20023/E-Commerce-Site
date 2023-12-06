@@ -57,7 +57,7 @@ hr {
 
 /* Logo,Search Section */
 
-.container {
+.navbar_cont {
   width: 90%;
   max-width: 1280px;
   margin: 0 auto;
@@ -223,27 +223,23 @@ ul li a:hover,
 }
 
 /* Top Image Slider */
-.image_top_Slider
-{
-  width: 100%;
+.image_top_Slider {
+  width: 90%;
+  max-width: 1280px;
   height: 500px;
 }
-.sec_1
-{
+.sec_1 {
   background-size: cover;
   background-image: url(./img/head_img_1.jpg);
 }
-.sec_2
-{
+.sec_2 {
   background-size: cover;
   background-image: url(./img/bg_big.jpg);
 }
-.sec_3
-{
+.sec_3 {
   background-size: cover;
   background-image: url(./img/head_3.jpg);
 }
-
 
 /* Responsive Design */
 @media (max-width: 575.98px) {
@@ -367,12 +363,11 @@ ul li a:hover,
   .call_ico {
     display: block;
   }
-  .image_top_Slider
-{
-  width: 80%;
-  max-width: 640px;
-  margin: 10px auto;
-}
+  .image_top_Slider {
+    width: 80%;
+    max-width: 640px;
+    margin: 10px auto;
+  }
 }
 /* End Of First Break Point  */
 
