@@ -246,6 +246,16 @@ ul li a:hover,
   background-image: url(./img/head_3.jpg);
 }
 
+
+
+/* Products Image */
+
+.p_img
+{
+  height: 102px;
+  width: 136px;
+}
+
 /* Responsive Design */
 @media (max-width: 575.98px) {
   .loc_txt {
@@ -374,6 +384,11 @@ ul li a:hover,
     max-width: 640px;
     margin: 10px auto;
   }
+  .center_d {
+    width: 90%;
+    max-width: 1280px;
+    margin: 0 auto;
+  }
 }
 /* End Of First Break Point  */
 
@@ -496,6 +511,11 @@ ul li a:hover,
     padding: 25px;
     max-width: 640px;
     margin: 10px auto;
+  }
+  .center_d {
+    width: 90%;
+    max-width: 1280px;
+    margin: 0 auto;
   }
 }
 
