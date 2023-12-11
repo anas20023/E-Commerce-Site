@@ -261,6 +261,21 @@ ul li a:hover,
   width: 250px;
   object-fit: cover;
 }
+#bann_1
+{
+  background-image:url(./img/Banner_mid/1.jpg) ;
+  background-size: cover;
+}
+#bann_2
+{
+  background-image:url(./img/Banner_mid/2.jpg) ;
+  background-size: cover;
+}
+#bann_3
+{
+  background-image:url(./img/Banner_mid/3.jpg) ;
+  background-size: cover;
+}
 
 /* Responsive Design */
 @media (max-width: 575.98px) {
