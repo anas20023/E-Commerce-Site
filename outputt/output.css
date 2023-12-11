@@ -873,6 +873,10 @@ video {
   height: max-content;
 }
 
+.h-\[540px\] {
+  height: 540px;
+}
+
 .w-48 {
   width: 12rem;
 }
