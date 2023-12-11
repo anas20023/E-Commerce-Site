@@ -22,6 +22,7 @@ Full Features will be added sooooon
 
  * **HTML**
  * **CSS**
+ * **Tailwind CSS**
  * **JS**
  * **MERN**
 
