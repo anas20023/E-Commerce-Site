@@ -1,5 +1,23 @@
 {
   "dependencies": {
     "tailwindcss": "^3.3.6"
-  }
+  },
+    "version": "2.0.0",
+    "tasks": [
+       {
+         "type": "npm",
+         "script": "build",
+         "problemMatcher": {
+           "owner": "custom-ng",
+           "fileLocation": ["relative", "${cwd}"],
+           "pattern": {
+             "regexp": "^\\s+at\\s+(.*)\\((\\d+),(\\d+)\\)\\s*$",
+             "file": 1,
+             "line": 2,
+             "column": 3
+           }
+         }
+       }
+    ]
+   
 }

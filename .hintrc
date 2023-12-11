@@ -3,6 +3,9 @@
     "development"
   ],
   "hints": {
-    "compat-api/css": "off"
+    "compat-api/css": "off",
+    "axe/forms": "off",
+    "axe/name-role-value": "off",
+    "no-inline-styles": "off"
   }
 }
