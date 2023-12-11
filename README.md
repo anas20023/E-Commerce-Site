@@ -23,6 +23,7 @@ Full Features will be added sooooon
  * **HTML**
  * **CSS**
  * **JS**
+ * **Tailwind CSS**
  * **MERN**
 
 ## Usage
