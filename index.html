@@ -72,6 +72,8 @@
 <body class="flex flex-col flex-wrap">
   <div class="nav_cont">
     <nav class="navbar">
+      <i id="nav_sm"
+        class="fa-solid fa-bars text-lg font-semibold block sm:block md:hidden lg:hidden text-green-600 cursor-pointer"></i>
       <ul>
         <li>
           <a href="#" class="active_home">Home <i class="fa-solid fa-angle-down nav_arr active_home"></i></a>
@@ -89,10 +91,23 @@
         <li><a href="#">Contact Us</a></li>
       </ul>
       <div class="call_now_top">
-        <a href="tel:+(219) 555-0114" class="call_now"><i class="fa-solid fa-phone call_ico"></i><span
-            class="nmbr">(219) 555-0114</span></a>
+        <a href="tel:+(219) 555-0114"
+          class="call_now  absolute right-5 sm:absolute sm:right-5 md:relative lg:relative"><i
+            class="fa-solid fa-phone call_ico"></i><span class="nmbr">(219) 555-0114</span></a>
       </div>
     </nav>
+    <div id="hidden_nav"
+      class="flex flex-col md:hidden lg:hidden justify-start items-start pl-40 text-4xl gap-3 font-bold py-10 w-4/5 h-screen text-white bg-gray-800 z-40 absolute -left-full transform duration-200">
+      <!-- <i id="cross_nav" class="fa-solid fa-xmark text-white text-xl font-black cursor-pointer absolute top-3 right-5"></i> -->
+
+      <a href="#">Home</a>
+      <a href="#">Shop <i class="fa-solid fa-angle-down nav_arr"></i></a>
+      <a href="#">Pages <i class="fa-solid fa-angle-down nav_arr"></i></a>
+      <a href="#">Blog </a>
+      <a href="#">About Us</a>
+      <a href="#">Contact Us</a>
+
+    </div>
   </div>
 
   <!-- Newsletter Popup Section Starts -->
