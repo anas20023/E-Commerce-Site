@@ -11,9 +11,9 @@ let cross_sm_nav=document.querySelector("#cross_nav");
 
 nwesltr_close.addEventListener("click",()=>
 {
-    bg_newsltr.classList.add("-top-full");
-    main_newsltr_div.classList.remove("top-1/2");
-    main_newsltr_div.classList.add("-top-full");
+    bg_newsltr.classList.add("hidden");
+    main_newsltr_div.classList.remove("flex");
+    main_newsltr_div.classList.add("hidden");
 });
 
 // For Sm NavBar
