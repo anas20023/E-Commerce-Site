@@ -4,3 +4,8 @@
 .h-540px {
   height: 540px;
 }
+
+.newsletter
+{
+  @apply absolute bg-white top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 h-[250px] sm:h-[350px] lg:h-[400px] w-[450px] sm:w-[550px] md:w-[650px] lg:w-[872px] rounded-md shadow-md
+}
