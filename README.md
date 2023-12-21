@@ -21,10 +21,9 @@ Full Features will be added sooooon
 
 
  * **HTML**
- * **CSS**
  * **Tailwind CSS**
  * **JS**
- * **MERN**
+ * **MERN(Will be Add)**
 
 ## Usage
 
