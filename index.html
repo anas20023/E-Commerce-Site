@@ -935,7 +935,9 @@
   <!-- Client Review Section Ends Here -->
 
   <!-- Brand Client Section Starts Here -->
-  <section class="center_d flex flex-col md:flex-row justify-between items-center h-[100px] w-full my-4 py-5 px-4 lg:px-0 gap-10 md:gap-0">
+  <!-- Brand Client Section Starts Here -->
+  <section
+    class="center_d flex flex-wrap justify-around items-center h-max w-full my-10 py-5 px-4 lg:px-0 gap-10 md:gap-0">
     <i class="fa-brands hover:text-green-600 fa-steam text-6xl text-gray-500"></i>
     <i class="fa-brands hover:text-green-600 fa-wordpress text-6xl text-gray-500"></i>
     <i class="fa-brands hover:text-green-600 fa-github text-6xl text-gray-500"></i>
@@ -943,20 +945,27 @@
     <i class="fa-brands hover:text-green-600 fa-windows text-6xl text-gray-500"></i>
     <i class="fa-brands hover:text-green-600 fa-wix text-6xl text-gray-500"></i>
   </section>
-    <!-- Brand Client Section Ends Here -->
-    <section class="center_d flex flex-col md:flex-row justify-between items-center h-{40vh} w-full my-4 py-5 px-4 lg:px-0 gap-10 md:gap-0">
-      <div class="flex flex-col justify-evenly items-center w-1/2 h-full bg-gray-500">
+  <!-- Brand Client Section Ends Here -->
 
-      </div>
-      <form class="flex flex-col justify-evenly items-center w-1/2 h-full bg-gray-500">
-        <input type="text" placeholder="Type here" class="input input-bordered input-accent w-full max-w-xs" />
-      </form>
-    </section>
-
-
-
-
-
+  <section
+    class="center_d flex flex-col md:flex-row justify-around items-center h-[30vh] w-full my-4 mt-8 py-5 px-4 lg:px-0 gap-10 md:gap-0">
+    <div class="flex flex-col justify-center items-center w-full md:w-1/2 h-full">
+      <h4 class="text-2xl text-center font-bold text-gray-800 mb-4">Subscribe to our Newsletter</h4>
+      <p class="text-sm text-gray-700 px-4 md:px-10 py-2">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos voluptatibus. Quisquam, quos
+        voluptatibus.
+      </p>
+    </div>
+    <form class="flex flex-col md:flex-row justify-around items-center w-full md:w-1/2 h-full">
+      <input type="email" id="email" placeholder="Enter your email"
+        class="bg-white border border-gray-300 text-gray-900 md:w-64 mb-2 md:mb-0 md:me-4 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
+        required />
+      <button type="submit"
+        class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full md:w-auto px-5 py-2.5">
+        Subscribe
+      </button>
+    </form>
+  </section>
   <script src="script.js"></script>
 </body>
 
