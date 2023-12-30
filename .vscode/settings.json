@@ -1,5 +1,6 @@
 {
     "css.validate": false,
-    "tailwindCSS.emmetCompletions": true
+    "tailwindCSS.emmetCompletions": true,
+    "prettier.bracketSameLine": true
   }
   
