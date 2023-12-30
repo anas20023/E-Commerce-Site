@@ -1,6 +1,29 @@
 {
-    "css.validate": false,
-    "tailwindCSS.emmetCompletions": true,
-    "prettier.bracketSameLine": true
-  }
-  
+   // CSS
+   "css.validate": false,
+   "tailwindCSS.emmetCompletions": true,
+   // Prettier
+   "prettier.bracketSameLine": true,
+   "prettier.singleQuote": true,
+   // TSLint
+   "tslint.rulesDirectory": "./node_modules/codelyzer",
+   // TypeScript
+   "typescript.tsdk": "node_modules/typescript/lib",
+   // Editor
+   "window.zoomLevel": 0,
+   "editor.formatOnSave": true,
+   // Language Specific Default Formatters
+   "[typescript]": {
+      "editor.defaultFormatter": "esbenp.prettier-vscode"
+   },
+   "[html]": {
+      "editor.defaultFormatter": "vscode.html-language-features"
+   },
+   "[javascript]": {
+      "editor.defaultFormatter": "esbenp.prettier-vscode"
+   },
+   // File Associations
+   "files.associations": {
+      "*.html": "html"
+   }
+}

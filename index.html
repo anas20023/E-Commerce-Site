@@ -1,1426 +1,1136 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="icon"
-      type="image/x-icon"
-      href="https://tgihost.pages.dev/image?id=BQACAgUAAx0EfBziBwAD52WGrU4Twqo083GyHnNTg-9ISWgmAALHDgACOm45VJXHifX41FQrMwQ" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
-      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="https://cdn.lineicons.com/4.0/lineicons.css" />
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link href="/outputt/output.css" rel="stylesheet" />
-    <link rel="stylesheet" href="style.css" />
-    <title>Ecobazar &nbsp; Home</title>
-  </head>
-  <header>
-    <!-- Top Location and Login SignUp Section -->
-    <div class="location_login">
-      <div class="location">
-        <a
-          href="https://maps.app.goo.gl/sXUpuHKUYU8vfPZD6"
-          target="_blank"
-          class="loc_ico"
-          rel="noopener">
-          <i class="fa-solid fa-location-dot loc_i"></i>
-          <h5 class="loc_txt">Lincoln- 348w-48, Illinois, Chicago, USA</h5>
-        </a>
-      </div>
-      <!-- Login/Sign UP -->
-      <div class="sign_sec">
-        <select name="" id="" class="slct">
-          <option value="english">Eng</option>
-          <option value="bangla">BAN</option>
-        </select>
-        <select name="" id="" class="slct">
-          <option value="usd">USD</option>
-          <option value="tk">Taka</option>
-        </select>
-        <a href="#" class="login" id="button" onclick="login_div()"
-          >Login / Sign Up</a
-        >
-      </div>
-    </div>
-    <hr />
 
-    <!-- Top Logo, Search Section -->
-    <div class="navbar_cont">
-      <a href="#">
-        <div class="logo">
-          <img
-            src="https://tgihost.pages.dev/image?id=BQACAgUAAx0EfBziBwAD52WGrU4Twqo083GyHnNTg-9ISWgmAALHDgACOm45VJXHifX41FQrMwQ"
-            class="logo_img"
-            alt="logo" />
-          <h1 class="logo_h">Ecobazar</h1>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/x-icon"
+    href="https://tgihost.pages.dev/image?id=BQACAgUAAx0EfBziBwAD52WGrU4Twqo083GyHnNTg-9ISWgmAALHDgACOm45VJXHifX41FQrMwQ" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdn.lineicons.com/4.0/lineicons.css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="/outputt/output.css" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <title>Ecobazar &nbsp; Home</title>
+</head>
+<header>
+  <!-- Top Location and Login SignUp Section -->
+  <div class="location_login">
+    <div class="location">
+      <a href="https://maps.app.goo.gl/sXUpuHKUYU8vfPZD6" target="_blank" class="loc_ico" rel="noopener">
+        <i class="fa-solid fa-location-dot loc_i"></i>
+        <h5 class="loc_txt">Lincoln- 348w-48, Illinois, Chicago, USA</h5>
+      </a>
+    </div>
+    <!-- Login/Sign UP -->
+    <div class="sign_sec">
+      <select name="" id="" class="slct">
+        <option value="english">Eng</option>
+        <option value="bangla">BAN</option>
+      </select>
+      <select name="" id="" class="slct">
+        <option value="usd">USD</option>
+        <option value="tk">Taka</option>
+      </select>
+      <a href="#" class="login" id="button" onclick="login_div()">Login / Sign Up</a>
+    </div>
+  </div>
+  <hr />
+
+  <!-- Top Logo, Search Section -->
+  <div class="navbar_cont">
+    <a href="#">
+      <div class="logo">
+        <img
+          src="https://tgihost.pages.dev/image?id=BQACAgUAAx0EfBziBwAD52WGrU4Twqo083GyHnNTg-9ISWgmAALHDgACOm45VJXHifX41FQrMwQ"
+          class="logo_img" alt="logo" />
+        <h1 class="logo_h">Ecobazar</h1>
+      </div>
+    </a>
+    <div class="search">
+      <input type="text" class="search_input" placeholder="Search" />
+      <button class="search_btn"><i class="fas fa-search"></i></button>
+    </div>
+    <div class="addto_cart">
+      <a href="#" class="heart_icon">
+        <i class="fa-regular fa-heart loved"></i></a>
+      <div class="line"></div>
+      <a href="#" class="heart_icon">
+        <div class="cart_count">
+          <i class="fa-solid fa-basket-shopping cartico"></i>
+          <span class="count">3</span>
         </div>
       </a>
-      <div class="search">
-        <input type="text" class="search_input" placeholder="Search" />
-        <button class="search_btn"><i class="fas fa-search"></i></button>
-      </div>
-      <div class="addto_cart">
-        <a href="#" class="heart_icon">
-          <i class="fa-regular fa-heart loved"></i
-        ></a>
-        <div class="line"></div>
-        <a href="#" class="heart_icon">
-          <div class="cart_count">
-            <i class="fa-solid fa-basket-shopping cartico"></i>
-            <span class="count">3</span>
-          </div>
-        </a>
-        <div class="scart">
-          <p class="s_cart_h">Shooping cart:</p>
-          <h2 class="price">$57.00</h2>
-        </div>
+      <div class="scart">
+        <p class="s_cart_h">Shooping cart:</p>
+        <h2 class="price">$57.00</h2>
       </div>
     </div>
-  </header>
+  </div>
+</header>
 
-  <body class="flex flex-col flex-wrap">
-    <div class="nav_cont">
-      <nav class="navbar">
-        <i
-          id="nav_sm"
-          class="fa-solid fa-bars text-lg font-semibold block sm:block md:hidden lg:hidden text-green-600 cursor-pointer"></i>
-        <ul>
-          <li>
-            <a href="#" class="active_home"
-              >Home <i class="fa-solid fa-angle-down nav_arr active_home"></i
-            ></a>
-          </li>
-          <li>
-            <a href="#">Shop <i class="fa-solid fa-angle-down nav_arr"></i></a>
-          </li>
-          <li>
-            <a href="#">Pages <i class="fa-solid fa-angle-down nav_arr"></i></a>
-          </li>
-          <li>
-            <a href="#">Blog <i class="fa-solid fa-angle-down nav_arr"></i></a>
-          </li>
-          <li><a href="#">About Us </a></li>
-          <li><a href="#">Contact Us</a></li>
-        </ul>
-        <div class="call_now_top">
-          <a
-            href="tel:+(219) 555-0114"
-            class="call_now absolute right-5 sm:absolute sm:right-5 md:relative lg:relative"
-            ><i class="fa-solid fa-phone call_ico"></i
-            ><span class="nmbr">(219) 555-0114</span></a
-          >
-        </div>
-      </nav>
-      <div
-        id="hidden_nav"
-        class="flex flex-col md:hidden lg:hidden justify-start items-start pl-40 text-4xl gap-3 font-bold py-10 w-4/5 h-screen text-white bg-gray-800 z-40 absolute -left-full transform duration-200">
-        <i
-          id="cross_nav"
-          class="fa-solid fa-xmark text-white text-xl font-black cursor-pointer absolute top-3 left-6"></i>
-
-        <a href="#">Home</a>
-        <a href="#">Shop <i class="fa-solid fa-angle-down nav_arr"></i></a>
-        <a href="#">Pages <i class="fa-solid fa-angle-down nav_arr"></i></a>
-        <a href="#">Blog </a>
-        <a href="#">About Us</a>
-        <a href="#">Contact Us</a>
+<body class="flex flex-col flex-wrap">
+  <div class="nav_cont">
+    <nav class="navbar">
+      <i id="nav_sm"
+        class="fa-solid fa-bars text-lg font-semibold block sm:block md:hidden lg:hidden text-green-600 cursor-pointer"></i>
+      <ul>
+        <li>
+          <a href="#" class="active_home">Home <i class="fa-solid fa-angle-down nav_arr active_home"></i></a>
+        </li>
+        <li>
+          <a href="#">Shop <i class="fa-solid fa-angle-down nav_arr"></i></a>
+        </li>
+        <li>
+          <a href="#">Pages <i class="fa-solid fa-angle-down nav_arr"></i></a>
+        </li>
+        <li>
+          <a href="#">Blog <i class="fa-solid fa-angle-down nav_arr"></i></a>
+        </li>
+        <li><a href="#">About Us </a></li>
+        <li><a href="#">Contact Us</a></li>
+      </ul>
+      <div class="call_now_top">
+        <a href="tel:+(219) 555-0114"
+          class="call_now absolute right-5 sm:absolute sm:right-5 md:relative lg:relative"><i
+            class="fa-solid fa-phone call_ico"></i><span class="nmbr">(219) 555-0114</span></a>
       </div>
+    </nav>
+    <div id="hidden_nav"
+      class="flex flex-col md:hidden lg:hidden justify-start items-start pl-40 text-4xl gap-3 font-bold py-10 w-4/5 h-screen text-white bg-gray-800 z-40 absolute -left-full transform duration-200">
+      <i id="cross_nav"
+        class="fa-solid fa-xmark text-white text-xl font-black cursor-pointer absolute top-3 left-6"></i>
+
+      <a href="#">Home</a>
+      <a href="#">Shop <i class="fa-solid fa-angle-down nav_arr"></i></a>
+      <a href="#">Pages <i class="fa-solid fa-angle-down nav_arr"></i></a>
+      <a href="#">Blog </a>
+      <a href="#">About Us</a>
+      <a href="#">Contact Us</a>
     </div>
+  </div>
 
-    <!-- Newsletter Popup Section Starts -->
-    <div
-      id="newsltr_bg"
-      class="fixed w-full h-screen bg-gray-900 opacity-90 top-0 z-30 transform duration-1000"></div>
-    <div id="newsltr_main" class="fixed newsletter flex flex-col sm:flex-row">
-      <!-- Left Image  -->
-      <img
-        class="w-full sm:w-2/5 h-48 sm:h-full object-cover"
-        src="https://tgihost.pages.dev/image?id=BQACAgUAAx0EfBziBwAD5mWGqsyGtaUyv5U7emuOnE7bMZRbAAK_DgACOm45VE6nwFUvdSBOMwQ"
-        alt="" />
+  <!-- Newsletter Popup Section Starts -->
+  <div id="newsltr_bg" class="fixed w-full h-screen bg-gray-900 opacity-90 top-0 z-30 transform duration-1000"></div>
+  <div id="newsltr_main" class="fixed newsletter flex flex-col sm:flex-row">
+    <!-- Left Image  -->
+    <img class="w-full sm:w-2/5 h-48 sm:h-full object-cover"
+      src="https://tgihost.pages.dev/image?id=BQACAgUAAx0EfBziBwAD5mWGqsyGtaUyv5U7emuOnE7bMZRbAAK_DgACOm45VE6nwFUvdSBOMwQ"
+      alt="" />
 
-      <!-- Right Content  -->
-      <form
-        action="#"
-        method="post"
-        class="flex flex-col justify-evenly items-center w-full sm:w-3/5 h-full px-1 py-1 sm:py-3 sm:px-2 lg:py-5 lg:px-3">
-        <i
-          id="cross_newsltr"
-          class="fa-solid fa-xmark text-base sm:text-lg lg:text-xl font-black cursor-pointer absolute top-3 right-5"></i>
-        <h2 class="text-lg lg:text-3xl font-bold text-center text-gray-800">
-          Subscribe to Our <br />
-          Newsletter
-        </h2>
-        <p class="text-center text-sm sm:text-base lg:text-md">
-          Subscribe to our newsletter and Save your
-          <span class="text-orange-600 font-semibold"
-            >20%<br />
-            money</span
-          >
-          with a discount code today.
-        </p>
+    <!-- Right Content  -->
+    <form action="#" method="post"
+      class="flex flex-col justify-evenly items-center w-full sm:w-3/5 h-full px-1 py-1 sm:py-3 sm:px-2 lg:py-5 lg:px-3">
+      <i id="cross_newsltr"
+        class="fa-solid fa-xmark text-base sm:text-lg lg:text-xl font-black cursor-pointer absolute top-3 right-5"></i>
+      <h2 class="text-lg lg:text-3xl font-bold text-center text-gray-800">
+        Subscribe to Our <br />
+        Newsletter
+      </h2>
+      <p class="text-center text-sm sm:text-base lg:text-md">
+        Subscribe to our newsletter and Save your
+        <span class="text-orange-600 font-semibold">20%<br />
+          money</span>
+        with a discount code today.
+      </p>
 
-        <div
-          class="w-full h-12 sm:h-16 lg:h-12 p-1 flex flex-row justify-center items-center">
-          <input
-            type="email"
-            name="email"
-            id="newsltr_mail"
-            placeholder="Enter your email"
-            class="required h-full w-4/5 sm:w-3/4 lg:w-full bg-gray-50 border border-gray-300 text-gray-900 text-xs lg:text-sm rounded-full focus:ring focus:ring-green-500 focus:border-green-500 p-3 sm:p-4 lg:p-4 transition-all duration-300 ease-in-out" />
-          <button
-            type="submit"
-            class="text-white bg-green-600 hover:bg-green-700 focus:ring focus:ring-green-300 focus:border-green-300 focus:outline-none font-normal lg:font-medium rounded-full h-full text-xs lg:text-sm px-4 sm:px-6 lg:px-6 transition-all duration-300 -ml-9 lg:-ml-10 ease-in-out text-center">
-            Submit
-          </button>
-        </div>
-
-        <div class="flex flex-row items-center h-5">
-          <input
-            id="remember"
-            type="checkbox"
-            name="remember"
-            value=""
-            class="w-3 h-3 lg:w-4 lg:h-4 border border-gray-300 rounded bg-gray-50 focus:ring-3 focus:ring-blue-300"
-            required />
-          <label
-            for="remember"
-            class="ms-2 text-xs lg:text-sm font-medium text-gray-500"
-            >Do not show this window</label
-          >
-        </div>
-      </form>
-    </div>
-    <!-- Newsletter Popup Section Ends -->
-
-    <!-- Slider Section -->
-
-    <div
-      class="image_top_Slider flex flex-col sm:flex-col lg:flex-row max-w-screen-xl sm:max-w-xl lg:max-w-screen-xl w-full justify-between mx-auto items-center mt-2 gap-4">
-      <div
-        class="sec_1 w-full sm:w-3/4 h-full rounded-lg flex flex-col justify-center items-center sm:items-start p-8">
-        <h3
-          class="text-white text-center sm:text-left text-5xl sm:text-2xl lg:text-5xl font-semibold">
-          Fresh & Healthy<br />Organic Food
-        </h3>
-        <div
-          class="flex flex-col justify-center items-center sm:items-start my-5 px-3 border-l-2 border-gray-100 gap-2">
-          <h4 class="text-white text-lg">
-            Sale up to
-            <span class="bg-green-500 p-1.5 font-semibold">30% OFF</span>
-          </h4>
-          <p class="text-lg text-white font-light">
-            Free shipping on all your orders
-          </p>
-        </div>
-        <a
-          class="bg-white text-center text-base font-bold text-green-500 p-3.5 rounded-full w-48 transform active:border-2 hover:translate-x-2 duration-300 active:bg-white focus:outline-none focus:ring focus:ring-green-500"
-          href="#"
-          >Shop now
-          <i class="fa-solid fa-arrow-right ml-3" style="color: #00d85e"></i
-        ></a>
-      </div>
-
-      <div
-        class="h-full w-full sm:w-1/2 lg:w-1/4 flex flex-col justify-start items-center gap-3 mt-4 sm:mt-0">
-        <div
-          class="flex flex-col justify-start p-5 items-start sec_2 w-full h-1/2 rounded-lg mb-4 sm:mb-0">
-          <h5 class="text-lg text-gray-600 rounded-lg">SUMMER SALE</h5>
-          <h3 class="text-2xl font-bold text-gray-800">75% OFF</h3>
-          <p class="text-xs font-medium text-gray-600 rounded-lg mt-3">
-            Only Fruits and Vegetables
-          </p>
-          <a class="text-base font-bold text-gray-800 mt-3" href="#"
-            >Shop Now<i
-              class="fa-solid fa-arrow-right ml-2"
-              style="color: #101010"></i
-          ></a>
-        </div>
-        <div
-          class="flex flex-col justify-center p-5 items-center sec_2 w-full rounded-lg sec_3 h-1/2">
-          <p class="text-xs text-white font-medium">BEST DEALS</p>
-          <h3 class="text-2xl text-white font-semibold mt-2 text-center">
-            Special Products <br />
-            Deal of the Month
-          </h3>
-          <a class="text-base font-semibold text-white mt-3" href="#"
-            >Shop Now<i
-              class="fa-solid fa-arrow-right ml-2"
-              style="color: #fff"></i
-          ></a>
-        </div>
-      </div>
-    </div>
-    <!-- End of Slider Section -->
-
-    <!-- Trust Section -->
-    <section
-      class="center_d flex flex-col sm:flex-col lg:flex-row w-full h-96 lg:h-32 justify-evenly items-center mt-60 sm:mt-60 lg:mt-6 shadow-xl rounded-md py-10 px-10 sm:px-12 lg:px-10 gap-5 sm:gap-10 lg:gap-5">
-      <div class="flex flex-row justify-between items-center gap-5">
-        <i
-          class="fa-solid fa-truck-fast"
-          style="color: #00bd1f; font-size: 28px"></i>
-        <div class="flex flex-col justify-between items-start">
-          <h3 class="text-base font-semibold text-gray-800">Fast Delivery</h3>
-          <p class="text-sm font-light text-gray-500">
-            Free shipping on all your order
-          </p>
-        </div>
-      </div>
-      <div class="flex flex-row justify-between items-center gap-5">
-        <i
-          class="fa-solid fa-headset"
-          style="color: #00bd1f; font-size: 28px"></i>
-        <div class="flex flex-col justify-between items-start">
-          <h3 class="text-base font-semibold text-gray-800">
-            Customer Support 24/7
-          </h3>
-          <p class="text-sm font-light text-gray-500">
-            Free shipping on all your order
-          </p>
-        </div>
-      </div>
-      <div class="flex flex-row justify-between items-center gap-5">
-        <i
-          class="fa-solid fa-shield-halved"
-          style="color: #00bd1f; font-size: 28px"></i>
-        <div class="flex flex-col justify-between items-start">
-          <h3 class="text-base font-semibold text-gray-800">
-            100% Secure Payment
-          </h3>
-          <p class="text-sm font-light text-gray-500">
-            We ensure your money is save
-          </p>
-        </div>
-      </div>
-      <div class="flex flex-row justify-between items-center gap-5">
-        <i
-          class="fa-solid fa-money-bill-1"
-          style="color: #00bd1f; font-size: 28px"></i>
-        <div class="flex flex-col justify-between items-start">
-          <h3 class="text-base font-semibold text-gray-800">
-            Money-Back Guarantee
-          </h3>
-          <p class="text-sm font-light text-gray-500">
-            We ensure your money is save
-          </p>
-        </div>
-      </div>
-    </section>
-    <!-- End of Trust Section -->
-
-    <!-- Product Catagory -->
-    <section
-      class="center_d flex flex-col flex-wrap justify-between w-full h-max mt-8 py-5 px-4 lg:px-0">
-      <div class="flex flex-row justify-between items-center">
-        <h4 class="text-xl font-bold text-gray-800">Popular Categories</h4>
-        <a class="text-green-500" href="#"
-          >View All
-          <i class="fa-solid fa-arrow-right ml-3" style="color: #00d85e"></i
-        ></a>
-      </div>
-      <div
-        class="flex flex-row flex-wrap justify-between items-center w-full h-max my-5">
-        <div
-          class="flex flex-col justify-between items-center w-48 h-48 sm:w-48 p-5 rounded-lg shadow-md hover:shadow-lg hover:border-2 border-green-500">
-          <img
-            class="object-cover p_img"
-            src="https://tgihost.pages.dev/image?id=BQACAgUAAx0EfBziBwADx2WGpWcUU_R3eWqWQCnsEHkNnmmUAAKRDgACOm45VHW4LlOPm1kIMwQ"
-            alt="" />
-          <h5 class="text-sm font-semibold text-gray-800 mt-3">Fresh Fruits</h5>
-        </div>
-        <div
-          class="flex flex-col justify-between items-center w-48 h-48 sm:w-48 p-5 rounded-lg shadow-md hover:shadow-lg hover:border-2 border-green-500">
-          <img
-            class="object-cover p_img"
-            src="https://tgihost.pages.dev/image?id=BQACAgUAAx0EfBziBwADyWWGpbFCbs1eYVjDBHDuER4dWxutAAKWDgACOm45VM-gYzt_5XXHMwQ"
-            alt="" />
-          <h5 class="text-sm font-semibold text-gray-800 mt-3">
-            Fresh Vegetables
-          </h5>
-        </div>
-        <div
-          class="flex flex-col justify-between items-center w-48 h-48 sm:w-48 p-5 rounded-lg shadow-md hover:shadow-lg hover:border-2 border-green-500">
-          <img
-            class="object-cover p_img"
-            src="https://tgihost.pages.dev/image?id=BQACAgUAAx0EfBziBwADymWGpcsCMql_cNqO0XvLDGzDC0nrAAKYDgACOm45VGfy_tytxxtXMwQ"
-            alt="" />
-          <h5 class="text-sm font-semibold text-gray-800 mt-3">Meat & Fish</h5>
-        </div>
-        <div
-          class="flex flex-col justify-between items-center w-48 h-48 sm:w-48 p-5 rounded-lg shadow-md hover:shadow-lg hover:border-2 border-green-500">
-          <img
-            class="object-cover p_img"
-            src="https://tgihost.pages.dev/image?id=BQACAgUAAx0EfBziBwADy2WGpd6o7ysy_eVizxXbJh07-siaAAKaDgACOm45VIZKCnclA0V6MwQ"
-            alt="" />
-          <h5 class="text-sm font-semibold text-gray-800 mt-3">Snacks</h5>
-        </div>
-        <div
-          class="flex flex-col justify-between items-center w-48 h-48 sm:w-48 p-5 rounded-lg shadow-md hover:shadow-lg hover:border-2 border-green-500">
-          <img
-            class="object-cover p_img"
-            src="https://tgihost.pages.dev/image?id=BQACAgUAAx0EfBziBwADzGWGpe_AVh2YoP_pO7inxzxxRsU2AAKdDgACOm45VFELWTHvv1YGMwQ"
-            alt="" />
-          <h5 class="text-sm font-semibold text-gray-800 mt-3">Beverages</h5>
-        </div>
-        <div
-          class="flex flex-col justify-between items-center w-48 h-48 sm:w-48 p-5 rounded-lg shadow-md hover:shadow-lg hover:border-2 border-green-500">
-          <img
-            class="object-cover p_img"
-            src="https://tgihost.pages.dev/image?id=BQACAgUAAx0EfBziBwADzWWGpgL81eGNrlS9Z0POVHx_JAABRwACnw4AAjpuOVRF8X3onFyCKDME"
-            alt="" />
-          <h5 class="text-sm font-semibold text-gray-800 mt-3">
-            Beauty & Health
-          </h5>
-        </div>
-      </div>
-
-      <!-- Second Row -->
-
-      <div
-        class="flex flex-row flex-wrap justify-between items-center w-full h-max my-1">
-        <div
-          class="flex flex-col justify-between items-center w-48 h-48 sm:w-48 p-5 rounded-lg shadow-md hover:shadow-lg hover:border-2 border-green-500">
-          <img
-            class="object-cover p_img"
-            src="https://tgihost.pages.dev/image?id=BQACAgUAAx0EfBziBwADzmWGphw9AaNtbwIeJs05cZHqk9FeAAKgDgACOm45VEtYDf0BzHI1MwQ"
-            alt="" />
-          <h5 class="text-sm font-semibold text-gray-800 mt-3">
-            Bread & Bakery
-          </h5>
-        </div>
-        <div
-          class="flex flex-col justify-between items-center w-48 h-48 sm:w-48 p-5 rounded-lg shadow-md hover:shadow-lg hover:border-2 border-green-500">
-          <img
-            class="object-cover p_img"
-            src="https://tgihost.pages.dev/image?id=BQACAgUAAx0EfBziBwADz2WGpiyzkLca4AjAeb0aqBxVXVDyAAKhDgACOm45VH1i-03mnHPMMwQ"
-            alt="" />
-          <h5 class="text-sm font-semibold text-gray-800 mt-3">Baking Needs</h5>
-        </div>
-        <div
-          class="flex flex-col justify-between items-center w-48 h-48 sm:w-48 p-5 rounded-lg shadow-md hover:shadow-lg hover:border-2 border-green-500">
-          <img
-            class="object-cover p_img"
-            src="https://tgihost.pages.dev/image?id=BQACAgUAAx0EfBziBwAD0GWGpj8WnWck6HhLM0-uUaQl81-WAAKiDgACOm45VNoFMXXq_fV2MwQ"
-            alt="" />
-          <h5 class="text-sm font-semibold text-gray-800 mt-3">Cooking</h5>
-        </div>
-        <div
-          class="flex flex-col justify-between items-center w-48 h-48 sm:w-48 p-5 rounded-lg shadow-md hover:shadow-lg hover:border-2 border-green-500">
-          <img
-            class="object-cover p_img"
-            src="https://tgihost.pages.dev/image?id=BQACAgUAAx0EfBziBwAD0WWGplMmB8FoSTiKIPYIYua_1fnqAAKjDgACOm45VMhxBQVMPBI3MwQ"
-            alt="" />
-          <h5 class="text-sm font-semibold text-gray-800 mt-3">
-            Diabetic Food
-          </h5>
-        </div>
-        <div
-          class="flex flex-col justify-between items-center w-48 h-48 sm:w-48 p-5 rounded-lg shadow-md hover:shadow-lg hover:border-2 border-green-500">
-          <img
-            class="object-cover p_img"
-            src="https://tgihost.pages.dev/image?id=BQACAgUAAx0EfBziBwAD0mWGpmN7qsp-90GKKtMLzJLTodGEAAKkDgACOm45VNGLeoHLQRmvMwQ"
-            alt="" />
-          <h5 class="text-sm font-semibold text-gray-800 mt-3">
-            Dish Detergents
-          </h5>
-        </div>
-        <div
-          class="flex flex-col justify-between items-center w-48 h-48 sm:w-48 p-5 rounded-lg shadow-md hover:shadow-lg hover:border-2 border-green-500">
-          <img
-            class="object-cover p_img"
-            src="https://tgihost.pages.dev/image?id=BQACAgUAAx0EfBziBwAD02WGpnLTkzk575Rz73X5prNRh-8dAAKlDgACOm45VNz-HwXNa1duMwQ"
-            alt="" />
-          <h5 class="text-sm font-semibold text-gray-800 mt-3">Oil</h5>
-        </div>
-      </div>
-    </section>
-    <!-- End of Product Catagory -->
-
-    <!-- Product Section -->
-    <section
-      class="center_d flex flex-col flex-wrap justify-between w-full h-max mt-8 py-5 px-4 lg:px-0">
-      <div class="sm:center_d flex flex-row justify-between items-center">
-        <h4 class="text-xl font-bold text-gray-800">Popular Products</h4>
-        <a class="text-green-500" href="#"
-          >View All
-          <i class="fa-solid fa-arrow-right ml-3" style="color: #00d85e"></i
-        ></a>
-      </div>
-
-      <!-- First Row -->
-
-      <div
-        class="center_d flex flex-row flex-wrap justify-between items-center w-full h-max my-6">
-        <div
-          class="flex flex-col justify-evenly items-start w-48 h-80 sm:w-80 lg:w-64 p-3.5 rounded-lg shadow-md hover:shadow-lg hover:border-2 border-green-500">
-          <p class="bg-red-500 text-white p-2 text-xs top-0 left-0 rounded-sm">
-            Sale 50%
-          </p>
-          <img
-            class="sec_p_img"
-            src="https://tgihost.pages.dev/image?id=BQACAgUAAx0EfBziBwAD1GWGppZNzTPKQbXejS0LTA37TDPDAAKmDgACOm45VPo5xG0aiDhuMwQ"
-            alt="" />
-          <div class="flex flex-row justify-between items-center w-full mt-2">
-            <div class="flex flex-col justify-center items-start">
-              <h5 class="text-sm font-semibold text-gray-600 rounded-lg">
-                Green Apple <br /><i
-                  class="fa-solid fa-star"
-                  style="color: #ffdd00"></i
-                ><i class="fa-solid fa-star" style="color: #ffdd00"></i
-                ><i class="fa-solid fa-star" style="color: #ffdd00"></i
-                ><i class="fa-solid fa-star" style="color: #ffdd00"></i>
-              </h5>
-              <p class="text-lg font-bold text-gray-900 mt-1">
-                $15.00
-                <span class="text-xs text-gray-500 line-through ml-2"
-                  >$30.00</span
-                >
-              </p>
-            </div>
-            <span
-              class="text-xl text-gray-800 hover:text-green-500 border-gray-800 rounded-full p-1"
-              ><i class="fa-solid fa-cart-plus"></i
-            ></span>
-          </div>
-        </div>
-        <div
-          class="flex flex-col justify-evenly items-start w-48 h-80 sm:w-80 lg:w-64 p-3.5 rounded-lg shadow-md hover:shadow-lg hover:border-2 border-green-500">
-          <!-- <p class="bg-red-500 text-white p-2 text-xs  top-0 left-0 rounded-sm">Sale 50%</p> -->
-          <img
-            class="sec_p_img"
-            src="https://tgihost.pages.dev/image?id=BQACAgUAAx0EfBziBwAD1WWGpq1-27S5Xg5Ud6mLDXEIHaHKAAKnDgACOm45VDD_xsMpxKvDMwQ"
-            alt="" />
-          <div class="flex flex-row justify-between items-center w-full mt-2">
-            <div class="flex flex-col justify-center items-start">
-              <h5 class="text-sm font-semibold text-gray-600 rounded-lg">
-                Fresh Indiar Malta <br /><i
-                  class="fa-solid fa-star"
-                  style="color: #ffdd00"></i
-                ><i class="fa-solid fa-star" style="color: #ffdd00"></i
-                ><i class="fa-solid fa-star" style="color: #ffdd00"></i
-                ><i class="fa-solid fa-star" style="color: #ffdd00"></i>
-              </h5>
-              <p class="text-lg font-bold text-gray-900 mt-1">$20.00</p>
-            </div>
-            <span
-              class="text-xl text-gray-800 hover:text-green-500 border-gray-800 rounded-full p-1"
-              ><i class="fa-solid fa-cart-plus"></i
-            ></span>
-          </div>
-        </div>
-        <div
-          class="flex flex-col justify-evenly items-start w-48 h-80 sm:w-80 lg:w-64 p-3.5 rounded-lg shadow-md hover:shadow-lg hover:border-2 border-green-500">
-          <!-- <p class="bg-red-500 text-white p-2 text-xs  top-0 left-0 rounded-sm">Sale 50%</p> -->
-          <img
-            class="sec_p_img"
-            src="https://tgihost.pages.dev/image?id=BQACAgUAAx0EfBziBwAD1mWGpsI2v9iKAaoPO4j7k6h4AzhJAAKoDgACOm45VE_DDtPLoLStMwQ"
-            alt="" />
-          <div
-            class="flex flex-row justify-between items-center w-full p-3 mt-2">
-            <div class="flex flex-col justify-center items-start">
-              <h5 class="text-sm font-semibold text-gray-600 rounded-lg">
-                Chinese cabbage <br /><i
-                  class="fa-solid fa-star"
-                  style="color: #ffdd00"></i
-                ><i class="fa-solid fa-star" style="color: #ffdd00"></i
-                ><i class="fa-solid fa-star" style="color: #ffdd00"></i
-                ><i class="fa-solid fa-star" style="color: #ffdd00"></i>
-              </h5>
-              <p class="text-lg font-bold text-gray-900 mt-1">$12.00</p>
-            </div>
-            <span
-              class="text-xl text-gray-800 hover:text-green-500 border-gray-800 rounded-full p-1"
-              ><i class="fa-solid fa-cart-plus"></i
-            ></span>
-          </div>
-        </div>
-        <div
-          class="flex flex-col justify-evenly items-start w-48 h-80 sm:w-80 lg:w-64 p-3.5 rounded-lg shadow-md hover:shadow-lg hover:border-2 border-green-500">
-          <!-- <p class="bg-red-500 text-white p-2 text-xs  top-0 left-0 rounded-sm">Sale 50%</p> -->
-          <img
-            class="sec_p_img"
-            src="https://tgihost.pages.dev/image?id=BQACAgUAAx0EfBziBwAD12WGptbHB0qXTG7wwwRVg4R9zpbnAAKpDgACOm45VKjx6O3Q-8-BMwQ"
-            alt="" />
-          <div class="flex flex-row justify-between items-center w-full mt-2">
-            <div class="flex flex-col justify-center items-start">
-              <h5 class="text-sm font-semibold text-gray-600 rounded-lg">
-                Green Lettuce <br /><i
-                  class="fa-solid fa-star"
-                  style="color: #ffdd00"></i
-                ><i class="fa-solid fa-star" style="color: #ffdd00"></i
-                ><i class="fa-solid fa-star" style="color: #ffdd00"></i
-                ><i class="fa-solid fa-star" style="color: #ffdd00"></i>
-              </h5>
-              <p class="text-lg font-bold text-gray-900 mt-1">$9.00</p>
-            </div>
-            <span
-              class="text-xl text-gray-800 hover:text-green-500 border-gray-800 rounded-full p-1"
-              ><i class="fa-solid fa-cart-plus"></i
-            ></span>
-          </div>
-        </div>
-        <div
-          class="flex flex-col justify-evenly items-start w-48 h-80 sm:w-80 lg:w-64 p-3.5 rounded-lg shadow-md hover:shadow-lg hover:border-2 border-green-500">
-          <!-- <p class="bg-red-500 text-white p-2 text-xs  top-0 left-0 rounded-sm">Sale 50%</p> -->
-          <img
-            class="sec_p_img"
-            src="https://tgihost.pages.dev/image?id=BQACAgUAAx0EfBziBwAD2GWGpu4SiFMgEq0lDjit7KMNV_pLAAKqDgACOm45VO6NUMPRBNsoMwQ"
-            alt="" />
-          <div
-            class="flex flex-row justify-between items-center w-full p-3 mt-2">
-            <div class="flex flex-col justify-center items-start">
-              <h5 class="text-sm font-semibold text-gray-600 rounded-lg">
-                EggPlant <br /><i
-                  class="fa-solid fa-star"
-                  style="color: #ffdd00"></i
-                ><i class="fa-solid fa-star" style="color: #ffdd00"></i
-                ><i class="fa-solid fa-star" style="color: #ffdd00"></i
-                ><i class="fa-solid fa-star" style="color: #ffdd00"></i>
-              </h5>
-              <p class="text-lg font-bold text-gray-900 mt-1">$34.00</p>
-            </div>
-            <span
-              class="text-xl text-gray-800 hover:text-green-500 border-gray-800 rounded-full p-1"
-              ><i class="fa-solid fa-cart-plus"></i
-            ></span>
-          </div>
-        </div>
-      </div>
-      <!-- First Row Ends -->
-
-      <!-- Second Row -->
-
-      <div
-        class="center_d flex flex-row flex-wrap justify-between items-center w-full h-max my-6">
-        <div
-          class="flex flex-col justify-evenly items-start w-48 h-80 sm:w-80 lg:w-64 p-3.5 rounded-lg shadow-md hover:shadow-lg hover:border-2 border-green-500">
-          <!-- <p class="bg-red-500 text-white p-2 text-xs top-0 left-0 rounded-sm">Sale 50%</p> -->
-          <img
-            class="sec_p_img"
-            src="https://tgihost.pages.dev/image?id=BQACAgUAAx0EfBziBwAD2WWGpwet8ezxHOxXAtDiXnM_uqnaAAKsDgACOm45VB2etND03ubKMwQ"
-            alt="" />
-          <div class="flex flex-row justify-between items-center w-full mt-2">
-            <div class="flex flex-col justify-center items-start">
-              <h5 class="text-sm font-semibold text-gray-600 rounded-lg">
-                Big Potatoes <br /><i
-                  class="fa-solid fa-star"
-                  style="color: #ffdd00"></i
-                ><i class="fa-solid fa-star" style="color: #ffdd00"></i
-                ><i class="fa-solid fa-star" style="color: #ffdd00"></i
-                ><i class="fa-solid fa-star" style="color: #ffdd00"></i>
-              </h5>
-              <p class="text-lg font-bold text-gray-900 mt-1">$20.00</p>
-            </div>
-            <span
-              class="text-xl text-gray-800 hover:text-green-500 border-gray-800 rounded-full p-1"
-              ><i class="fa-solid fa-cart-plus"></i
-            ></span>
-          </div>
-        </div>
-        <div
-          class="flex flex-col justify-evenly items-start w-48 h-80 sm:w-80 lg:w-64 p-3.5 rounded-lg shadow-md hover:shadow-lg hover:border-2 border-green-500">
-          <!-- <p class="bg-red-500 text-white p-2 text-xs  top-0 left-0 rounded-sm">Sale 50%</p> -->
-          <img
-            class="sec_p_img"
-            src="https://tgihost.pages.dev/image?id=BQACAgUAAx0EfBziBwAD2mWGpx3aN0iKGsPLZwcgXaxK9rUfAAKtDgACOm45VNA6Mhpu3aJ8MwQ"
-            alt="" />
-          <div class="flex flex-row justify-between items-center w-full mt-2">
-            <div class="flex flex-col justify-center items-start">
-              <h5 class="text-sm font-semibold text-gray-600 rounded-lg">
-                Corn <br /><i
-                  class="fa-solid fa-star"
-                  style="color: #ffdd00"></i
-                ><i class="fa-solid fa-star" style="color: #ffdd00"></i
-                ><i class="fa-solid fa-star" style="color: #ffdd00"></i
-                ><i class="fa-solid fa-star" style="color: #ffdd00"></i>
-              </h5>
-              <p class="text-lg font-bold text-gray-900 mt-1">$20.00</p>
-            </div>
-            <span
-              class="text-xl text-gray-800 hover:text-green-500 border-gray-800 rounded-full p-1"
-              ><i class="fa-solid fa-cart-plus"></i
-            ></span>
-          </div>
-        </div>
-        <div
-          class="flex flex-col justify-evenly items-start w-48 h-80 sm:w-80 lg:w-64 p-3.5 rounded-lg shadow-md hover:shadow-lg hover:border-2 border-green-500">
-          <!-- <p class="bg-red-500 text-white p-2 text-xs  top-0 left-0 rounded-sm">Sale 50%</p> -->
-          <img
-            class="sec_p_img"
-            src="https://tgihost.pages.dev/image?id=BQACAgUAAx0EfBziBwAD22WGpzK7qG3jMIguDOUyqQ3VBFecAALeCwACHjM4VIOzYaED9x6rMwQ"
-            alt="" />
-          <div
-            class="flex flex-row justify-between items-center w-full p-3 mt-2">
-            <div class="flex flex-col justify-center items-start">
-              <h5 class="text-sm font-semibold text-gray-600 rounded-lg">
-                Fresh Cauliflower<br /><i
-                  class="fa-solid fa-star"
-                  style="color: #ffdd00"></i
-                ><i class="fa-solid fa-star" style="color: #ffdd00"></i
-                ><i class="fa-solid fa-star" style="color: #ffdd00"></i
-                ><i class="fa-solid fa-star" style="color: #ffdd00"></i>
-              </h5>
-              <p class="text-lg font-bold text-gray-900 mt-1">$12.00</p>
-            </div>
-            <span
-              class="text-xl text-gray-800 hover:text-green-500 border-gray-800 rounded-full p-1"
-              ><i class="fa-solid fa-cart-plus"></i
-            ></span>
-          </div>
-        </div>
-        <div
-          class="flex flex-col justify-evenly items-start w-48 h-80 sm:w-80 lg:w-64 p-3.5 rounded-lg shadow-md hover:shadow-lg hover:border-2 border-green-500">
-          <p class="bg-red-500 text-white p-2 text-xs top-0 left-0 rounded-sm">
-            Sale 50%
-          </p>
-          <img
-            class="sec_p_img"
-            src="https://tgihost.pages.dev/image?id=BQACAgUAAx0EfBziBwAD3GWGp0f-ziTMhHZl1mAdILJm0odeAAKuDgACOm45VLxDmcYGeZwLMwQ"
-            alt="" />
-          <div class="flex flex-row justify-between items-center w-full mt-2">
-            <div class="flex flex-col justify-center items-start">
-              <h5 class="text-sm font-semibold text-gray-600 rounded-lg">
-                Green Capsicum <br /><i
-                  class="fa-solid fa-star"
-                  style="color: #ffdd00"></i
-                ><i class="fa-solid fa-star" style="color: #ffdd00"></i
-                ><i class="fa-solid fa-star" style="color: #ffdd00"></i
-                ><i class="fa-solid fa-star" style="color: #ffdd00"></i>
-              </h5>
-              <p class="text-lg font-bold text-gray-900 mt-1">
-                $9.00
-                <span class="text-xs text-gray-500 line-through ml-2"
-                  >$20.00</span
-                >
-              </p>
-            </div>
-            <span
-              class="text-xl text-gray-800 hover:text-green-500 border-gray-800 rounded-full p-1"
-              ><i class="fa-solid fa-cart-plus"></i
-            ></span>
-          </div>
-        </div>
-        <div
-          class="flex flex-col justify-evenly items-start w-48 h-80 sm:w-80 lg:w-64 p-3.5 rounded-lg shadow-md hover:shadow-lg hover:border-2 border-green-500">
-          <!-- <p class="bg-red-500 text-white p-2 text-xs  top-0 left-0 rounded-sm">Sale 50%</p> -->
-          <img
-            class="sec_p_img"
-            src="https://tgihost.pages.dev/image?id=BQACAgUAAx0EfBziBwAD3WWGp10pfREvZw6MWXQYGa5rDNMNAAKvDgACOm45VOpBqbQGIbgUMwQ"
-            alt="" />
-          <div
-            class="flex flex-row justify-between items-center w-full p-3 mt-2">
-            <div class="flex flex-col justify-center items-start">
-              <h5 class="text-sm font-semibold text-gray-600 rounded-lg">
-                Green Chili <br /><i
-                  class="fa-solid fa-star"
-                  style="color: #ffdd00"></i
-                ><i class="fa-solid fa-star" style="color: #ffdd00"></i
-                ><i class="fa-solid fa-star" style="color: #ffdd00"></i
-                ><i class="fa-solid fa-star" style="color: #ffdd00"></i>
-              </h5>
-              <p class="text-lg font-bold text-gray-900 mt-1">$34.00</p>
-            </div>
-            <span
-              class="text-xl text-gray-800 hover:text-green-500 border-gray-800 rounded-full p-1"
-              ><i class="fa-solid fa-cart-plus"></i
-            ></span>
-          </div>
-        </div>
-      </div>
-      <!-- Second Row Ends -->
-    </section>
-    <!-- End of Product Section -->
-
-    <!-- Banner Section Starts -->
-    <section
-      class="center_d flex flex-col lg:flex-row h-max justify-between items-center my-5 gap-5">
-      <!-- First Banner -->
-      <div
-        id="bann_1"
-        class="center_d w-full lg:w-4/12 h-[540px] rounded-lg flex flex-col justify-start items-center pt-12">
-        <h4 class="text-lg text-center font-medium text-gray-800">
-          BEST DEALS
-        </h4>
-        <h2 class="text-center font-semibold text-gray-800 text-4xl mt-2">
-          Sale of the Month
-        </h2>
-        <div
-          class="flex flex-row w-full justify-center items-center h-max py-4 px-6 gap-2 mx-auto">
-          <div class="text-lg bg-blue-600 p-2 text-white text-center">
-            00 <br />
-            DAYS
-          </div>
-          <div class="text-lg bg-green-600 p-2 text-white text-center">
-            02 <br />
-            HOURS
-          </div>
-          <div class="text-lg bg-red-600 p-2 text-white text-center">
-            18 <br />
-            MINS
-          </div>
-          <div class="text-lg bg-gray-600 p-2 text-white text-center">
-            46 <br />
-            SECS
-          </div>
-        </div>
-        <a
-          class="bg-white text-center text-base font-bold text-green-500 mt-2 p-3.5 rounded-full w-48 transform active:border-2 hover:translate-x-2 duration-300 active:bg-white focus:outline-none focus:ring focus:ring-green-500"
-          href="#"
-          >Shop now
-          <i class="fa-solid fa-arrow-right ml-3" style="color: #00ff26"></i
-        ></a>
-      </div>
-      <!-- Second Banner -->
-      <div
-        id="bann_2"
-        class="center_d w-full lg:w-4/12 h-[540px] rounded-lg flex flex-col justify-start items-center pt-12 gap-6">
-        <h4 class="text-lg text-center font-medium text-white">85% FAT FREE</h4>
-        <h2 class="text-center font-semibold text-white text-4xl mt-2">
-          Low-Fat Meat
-        </h2>
-        <p class="text-lg text-white font-medium">
-          Started at
-          <span
-            class="bg-white text-gray-700 font-bold py-2 px-4 ml-1 rounded-md text-base"
-            >$79.99</span
-          >
-        </p>
-        <a
-          class="bg-green-500 text-center text-base font-bold text-white mt-2 p-3.5 rounded-full w-48 transform active:border-2 hover:translate-x-2 duration-300 active:bg-white focus:outline-none focus:ring focus:ring-green-500"
-          href="#"
-          >Shop now
-          <i class="fa-solid fa-arrow-right ml-3" style="color: #fff"></i
-        ></a>
-      </div>
-      <!-- Third Banner -->
-      <div
-        id="bann_3"
-        class="center_d w-full lg:w-4/12 h-[540px] rounded-lg flex flex-col justify-start items-center pt-12 gap-6">
-        <h4 class="text-lg text-center font-medium text-white">SUMMER SALE</h4>
-        <h2 class="text-center font-semibold text-white text-4xl mt-2">
-          100% Fresh Fruit
-        </h2>
-        <p class="text-lg text-white font-medium">
-          Up to
-          <span
-            class="bg-yellow-300 text-gray-900 font-bold py-2 px-4 ml-1 rounded-md text-base"
-            >65% OFF</span
-          >
-        </p>
-        <a
-          class="bg-white text-center text-base font-bold text-green-500 mt-2 p-3.5 rounded-full w-48 transform active:border-2 hover:translate-x-2 duration-300 active:bg-white focus:outline-none focus:ring focus:ring-green-500"
-          href="#"
-          >Shop now
-          <i class="fa-solid fa-arrow-right ml-3" style="color: #00ff26"></i
-        ></a>
-      </div>
-    </section>
-    <!-- Banner Section Ends -->
-
-    <!-- NewsLetter Section Starts -->
-    <section
-      class="center_d flex flex-wrap flex-col lg:flex-row h-[450px] sm:h-[450px] md:[430px] lg:h-[358px] justify-end items-end sm:items-end lg:items-center my-5 bg-[url(https://tgihost.pages.dev/image?id=BQACAgUAAx0EfBziBwAD4WWGqFWimmJEeAE1knTPz58HiEYDAAKzDgACOm45VAFrYQHu7d9xMwQ)] bg-cover rounded-lg">
-      <div
-        class="flex flex-col h-full w-2/5 sm:w-2/5 lg:w-1/3 justify-center items-start py-5 lg:px-1 text-white gap-3">
-        <p>SUMMER SALE</p>
-        <h2 class="text-4xl font-semibold">
-          <span class="text-green-400">37%</span> OFF
-        </h2>
-        <p class="text-xs lg:text-sm">
-          Free on all your order, Free Shipping and 30 days <br />
-          money-back guarantee
-        </p>
-        <a
-          class="bg-green-500 text-center text-xs lg:text-base font-medium lg:font-bold text-white mt-2 p-3.5 rounded-full sm:w-32 lg:w-48 transform active:border-2 hover:translate-x-2 duration-300 focus:outline-none focus:ring focus:ring-green-500"
-          href="#"
-          >Shop now
-          <i class="fa-solid fa-arrow-right ml-3" style="color: #fff"></i
-        ></a>
-      </div>
-    </section>
-    <!-- NewsLetter Section Ends -->
-
-    <!-- Featured Product Catagory -->
-    <section
-      class="center_d flex flex-col justify-between w-full h-max mt-8 py-5 px-4 lg:px-0">
-      <div class="sm:center_d flex flex-row justify-between items-center">
-        <h4 class="text-xl font-bold text-gray-800">Featured Products</h4>
-        <a class="text-green-500" href="#"
-          >View All
-          <i class="fa-solid fa-arrow-right ml-3" style="color: #00d85e"></i
-        ></a>
-      </div>
-      <div
-        class="center_d flex flex-row flex-wrap justify-between items-center w-full h-max my-6">
-        <div
-          class="flex flex-col justify-evenly items-start w-48 h-80 sm:w-80 lg:w-64 p-3.5 rounded-lg shadow-md hover:shadow-lg hover:border-2 border-green-500">
-          <!-- <p class="bg-red-500 text-white p-2 text-xs  top-0 left-0 rounded-sm">Sale 50%</p> -->
-          <img
-            class="sec_p_img"
-            src="https://tgihost.pages.dev/image?id=BQACAgUAAx0EfBziBwAD1WWGpq1-27S5Xg5Ud6mLDXEIHaHKAAKnDgACOm45VDD_xsMpxKvDMwQ"
-            alt="" />
-          <div class="flex flex-row justify-between items-center w-full mt-2">
-            <div class="flex flex-col justify-center items-start">
-              <h5 class="text-sm font-semibold text-gray-600 rounded-lg">
-                Fresh Indiar Malta <br /><i
-                  class="fa-solid fa-star"
-                  style="color: #ffdd00"></i
-                ><i class="fa-solid fa-star" style="color: #ffdd00"></i
-                ><i class="fa-solid fa-star" style="color: #ffdd00"></i
-                ><i class="fa-solid fa-star" style="color: #ffdd00"></i>
-              </h5>
-              <p class="text-lg font-bold text-gray-900 mt-1">$20.00</p>
-            </div>
-            <span
-              class="text-xl text-gray-800 hover:text-green-500 border-gray-800 rounded-full p-1"
-              ><i class="fa-solid fa-cart-plus"></i
-            ></span>
-          </div>
-        </div>
-        <div
-          class="flex flex-col justify-evenly items-start w-48 h-80 sm:w-80 lg:w-64 p-3.5 rounded-lg shadow-md hover:shadow-lg hover:border-2 border-green-500">
-          <!-- <p class="bg-red-500 text-white p-2 text-xs top-0 left-0 rounded-sm">Sale 50%</p> -->
-          <img
-            class="sec_p_img"
-            src="https://tgihost.pages.dev/image?id=BQACAgUAAx0EfBziBwAD1GWGppZNzTPKQbXejS0LTA37TDPDAAKmDgACOm45VPo5xG0aiDhuMwQ"
-            alt="" />
-          <div class="flex flex-row justify-between items-center w-full mt-2">
-            <div class="flex flex-col justify-center items-start">
-              <h5 class="text-sm font-semibold text-gray-600 rounded-lg">
-                Green Apple <br /><i
-                  class="fa-solid fa-star"
-                  style="color: #ffdd00"></i
-                ><i class="fa-solid fa-star" style="color: #ffdd00"></i
-                ><i class="fa-solid fa-star" style="color: #ffdd00"></i
-                ><i class="fa-solid fa-star" style="color: #ffdd00"></i>
-              </h5>
-              <p class="text-lg font-bold text-gray-900 mt-1">
-                $15.00
-                <span class="text-xs text-gray-500 line-through ml-2"
-                  >$30.00</span
-                >
-              </p>
-            </div>
-            <span
-              class="text-xl text-gray-800 hover:text-green-500 border-gray-800 rounded-full p-1"
-              ><i class="fa-solid fa-cart-plus"></i
-            ></span>
-          </div>
-        </div>
-        <div
-          class="flex flex-col justify-evenly items-start w-48 h-80 sm:w-80 lg:w-64 p-3.5 rounded-lg shadow-md hover:shadow-lg hover:border-2 border-green-500">
-          <!-- <p class="bg-red-500 text-white p-2 text-xs  top-0 left-0 rounded-sm">Sale 50%</p> -->
-          <img
-            class="sec_p_img"
-            src="https://tgihost.pages.dev/image?id=BQACAgUAAx0EfBziBwAD2GWGpu4SiFMgEq0lDjit7KMNV_pLAAKqDgACOm45VO6NUMPRBNsoMwQ"
-            alt="" />
-          <div
-            class="flex flex-row justify-between items-center w-full p-3 mt-2">
-            <div class="flex flex-col justify-center items-start">
-              <h5 class="text-sm font-semibold text-gray-600 rounded-lg">
-                EggPlant <br /><i
-                  class="fa-solid fa-star"
-                  style="color: #ffdd00"></i
-                ><i class="fa-solid fa-star" style="color: #ffdd00"></i
-                ><i class="fa-solid fa-star" style="color: #ffdd00"></i
-                ><i class="fa-solid fa-star" style="color: #ffdd00"></i>
-              </h5>
-              <p class="text-lg font-bold text-gray-900 mt-1">$34.00</p>
-            </div>
-            <span
-              class="text-xl text-gray-800 hover:text-green-500 border-gray-800 rounded-full p-1"
-              ><i class="fa-solid fa-cart-plus"></i
-            ></span>
-          </div>
-        </div>
-        <div
-          class="flex flex-col justify-evenly items-start w-48 h-80 sm:w-80 lg:w-64 p-3.5 rounded-lg shadow-md hover:shadow-lg hover:border-2 border-green-500">
-          <!-- <p class="bg-red-500 text-white p-2 text-xs  top-0 left-0 rounded-sm">Sale 50%</p> -->
-          <img
-            class="sec_p_img"
-            src="https://tgihost.pages.dev/image?id=BQACAgUAAx0EfBziBwAD1mWGpsI2v9iKAaoPO4j7k6h4AzhJAAKoDgACOm45VE_DDtPLoLStMwQ"
-            alt="" />
-          <div
-            class="flex flex-row justify-between items-center w-full p-3 mt-2">
-            <div class="flex flex-col justify-center items-start">
-              <h5 class="text-sm font-semibold text-gray-600 rounded-lg">
-                Chinese cabbage <br /><i
-                  class="fa-solid fa-star"
-                  style="color: #ffdd00"></i
-                ><i class="fa-solid fa-star" style="color: #ffdd00"></i
-                ><i class="fa-solid fa-star" style="color: #ffdd00"></i
-                ><i class="fa-solid fa-star" style="color: #ffdd00"></i>
-              </h5>
-              <p class="text-lg font-bold text-gray-900 mt-1">$12.00</p>
-            </div>
-            <span
-              class="text-xl text-gray-800 hover:text-green-500 border-gray-800 rounded-full p-1"
-              ><i class="fa-solid fa-cart-plus"></i
-            ></span>
-          </div>
-        </div>
-        <div
-          class="flex flex-col justify-evenly items-start w-48 h-80 sm:w-80 lg:w-64 p-3.5 rounded-lg shadow-md hover:shadow-lg hover:border-2 border-green-500">
-          <!-- <p class="bg-red-500 text-white p-2 text-xs  top-0 left-0 rounded-sm">Sale 50%</p> -->
-          <img
-            class="sec_p_img"
-            src="https://tgihost.pages.dev/image?id=BQACAgUAAx0EfBziBwAD12WGptbHB0qXTG7wwwRVg4R9zpbnAAKpDgACOm45VKjx6O3Q-8-BMwQ"
-            alt="" />
-          <div class="flex flex-row justify-between items-center w-full mt-2">
-            <div class="flex flex-col justify-center items-start">
-              <h5 class="text-sm font-semibold text-gray-600 rounded-lg">
-                Green Lettuce <br /><i
-                  class="fa-solid fa-star"
-                  style="color: #ffdd00"></i
-                ><i class="fa-solid fa-star" style="color: #ffdd00"></i
-                ><i class="fa-solid fa-star" style="color: #ffdd00"></i
-                ><i class="fa-solid fa-star" style="color: #ffdd00"></i>
-              </h5>
-              <p class="text-lg font-bold text-gray-900 mt-1">$9.00</p>
-            </div>
-            <span
-              class="text-xl text-gray-800 hover:text-green-500 border-gray-800 rounded-full p-1"
-              ><i class="fa-solid fa-cart-plus"></i
-            ></span>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- End of Featured Product Section -->
-
-    <!-- News Section Starts Here -->
-    <section
-      class="center_d flex flex-col flex-wrap justify-between w-full h-max mt-8 py-5 px-4 lg:px-0">
-      <h4 class="text-2xl text-center mb-10 font-bold text-gray-800">
-        Latest News
-      </h4>
-      <div
-        class="flex flex-col sm:flex-col w-full h-full lg:flex-row justify-between items-center gap-10 sm:gap-9 lg:gap-4 cursor-pointer">
-        <!-- Main News  Card 1 1 Starts -->
-        <div
-          class="flex flex-col justify-between items-center h-[494px] rounded-lg max-h-full w-full sm:w-full lg:w-1/3 shadow-sm hover:shadow-2xl transform duration-500">
-          <div
-            class="w-full h-4/6 rounded-t-lg bg-[url(https://tgihost.pages.dev/image?id=BQACAgUAAx0EfBziBwAD4mWGqcNoKE9RBCpU0f29O8dOi_dwAAK3DgACOm45VAuOw3i1HTQpMwQ)] bg-cover">
-            <div
-              class="bg-white inline-block text-center px-4 py-2 relative top-3/4 left-5 rounded-md">
-              <h2 class="text-base font-semibold text-gray-800">18</h2>
-              <p class="text-base text-gray-700">NOV</p>
-            </div>
-          </div>
-          <div
-            class="flex flex-col justify-evenly h-2/6 w-full rounded-lg border-b-2 border-l-2 border-r-2 border-gray-100">
-            <div class="flex flex-row p-2 gap-3 text-sm">
-              <p><i class="fa-solid fa-tag mx-2 text-gray-500"></i>Food</p>
-              <p><i class="fa-solid fa-user mx-2 text-gray-500"></i>By Admin</p>
-              <p>
-                <i class="fa-solid fa-message mx-2 text-gray-500"></i>65
-                Comments
-              </p>
-            </div>
-            <div class="flex flex-col p-2">
-              <h5 class="text-sm m-0 text-gray-800 hover:text-green-600 px-2">
-                Curabitur porttitor orci eget neque accumsan venenatis. Nunc
-                fermentum.
-              </h5>
-              <a href="#">
-                <p class="text-md font-medium text-green-500 px-2 py-2">
-                  Read More
-                  <i
-                    class="fa-solid fa-arrow-right ml-3"
-                    style="color: #00d85e"></i>
-                </p>
-              </a>
-            </div>
-          </div>
-        </div>
-        <!-- Main News  Card 1 1 Ends -->
-        <!-- Main News  Card 1 2 Starts -->
-        <div
-          class="flex flex-col justify-between items-center h-[494px] rounded-lg max-h-full w-full sm:w-full lg:w-1/3 shadow-sm hover:shadow-2xl transform duration-500">
-          <div
-            class="w-full h-4/6 rounded-t-lg bg-[url(https://tgihost.pages.dev/image?id=BQACAgUAAx0EfBziBwAD42WGqeHFrcX_NQmxqCouZfW5GhrTAAK4DgACOm45VGBERqBg_Ua9MwQ)] bg-cover">
-            <div
-              class="bg-white inline-block text-center px-4 py-2 relative top-3/4 left-5 rounded-md">
-              <h2 class="text-base font-semibold text-gray-800">18</h2>
-              <p class="text-base text-gray-700">NOV</p>
-            </div>
-          </div>
-          <div
-            class="flex flex-col justify-evenly h-2/6 w-full rounded-lg border-b-2 border-l-2 border-r-2 border-gray-100">
-            <div class="flex flex-row p-2 gap-3 text-sm">
-              <p><i class="fa-solid fa-tag mx-2 text-gray-500"></i>Food</p>
-              <p><i class="fa-solid fa-user mx-2 text-gray-500"></i>By Admin</p>
-              <p>
-                <i class="fa-solid fa-message mx-2 text-gray-500"></i>65
-                Comments
-              </p>
-            </div>
-            <div class="flex flex-col p-2">
-              <h5 class="text-sm m-0 text-gray-800 hover:text-green-600 px-2">
-                Eget lobortis lorem lacinia. Vivamus pharetra semper,.
-              </h5>
-              <a href="#">
-                <p class="text-md font-medium text-green-500 px-2 py-2">
-                  Read More
-                  <i
-                    class="fa-solid fa-arrow-right ml-3"
-                    style="color: #00d85e"></i>
-                </p>
-              </a>
-            </div>
-          </div>
-        </div>
-        <!-- Main News  Card 1 2 Ends -->
-        <!-- Main News  Card 1 3 Starts -->
-        <div
-          class="flex flex-col justify-between items-center h-[494px] rounded-lg max-h-full w-full sm:w-full lg:w-1/3 shadow-sm hover:shadow-2xl transform duration-500">
-          <div
-            class="w-full h-4/6 rounded-t-lg bg-[url(https://tgihost.pages.dev/image?id=BQACAgUAAx0EfBziBwAD5GWGqgP3WxPJ6GvaJwUK9zPUN57pAAK7DgACOm45VDz7R_Mcyw_lMwQ)] bg-cover">
-            <div
-              class="bg-white inline-block text-center px-4 py-2 relative top-3/4 left-5 rounded-md">
-              <h2 class="text-base font-semibold text-gray-800">18</h2>
-              <p class="text-base text-gray-700">NOV</p>
-            </div>
-          </div>
-          <div
-            class="flex flex-col justify-evenly h-2/6 w-full rounded-lg border-b-2 border-l-2 border-r-2 border-gray-100">
-            <div class="flex flex-row p-2 gap-3 text-sm">
-              <p><i class="fa-solid fa-tag mx-2 text-gray-500"></i>Food</p>
-              <p><i class="fa-solid fa-user mx-2 text-gray-500"></i>By Admin</p>
-              <p>
-                <i class="fa-solid fa-message mx-2 text-gray-500"></i>65
-                Comments
-              </p>
-            </div>
-            <div class="flex flex-col p-2">
-              <h5 class="text-sm m-0 text-gray-800 hover:text-green-600 px-2">
-                Maecenas blandit risus elementum mauris malesuada.
-              </h5>
-              <a href="#">
-                <p class="text-md font-medium text-green-500 px-2 py-2">
-                  Read More
-                  <i
-                    class="fa-solid fa-arrow-right ml-3"
-                    style="color: #00d85e"></i>
-                </p>
-              </a>
-            </div>
-          </div>
-        </div>
-        <!-- Main News  Card 1 3 Ends -->
-      </div>
-    </section>
-    <!-- News Section Ends Here -->
-
-    <!-- Client Review Section Starts Here -->
-    <section
-      class="flex flex-col sm:flex-col md:flex-row lg:flex-row flex-wrap justify-between items-center w-full min-h-[65vh] bg-gray-100 mt-8 py-4 px-4 lg:px-0">
-      <div
-        class="center_d flex flex-col sm:flex-col md:flex-row lg:flex-row justify-between items-center w-full h-1/4 mb-4 sm:mb-0 md:mb-0 lg:mb-0">
-        <h4
-          class="text-xl font-bold text-gray-800 mb-2 sm:mb-4 md:mb-4 lg:mb-4">
-          Client Testimonials
-        </h4>
-        <div class="flex flex-row gap-3 md:gap-2">
-          <i
-            class="fa-solid fa-arrow-left bg-white hover:bg-green-600 rounded-full p-3 cursor-pointer border-gray-200 text-gray-700 hover:text-white"></i>
-          <i
-            class="fa-solid fa-arrow-right bg-white hover:bg-green-600 rounded-full p-3 cursor-pointer border-gray-200 text-gray-700 hover:text-white"></i>
-        </div>
-      </div>
-      <div
-        class="center_d flex flex-col sm:flex-col md:flex-row lg:flex-row justify-between items-center w-full h-3/4 gap-4">
-        <!-- Main Div Card 1 Starts -->
-        <div
-          class="flex flex-col justify-center items-center w-full sm:w-full md:w-1/2 lg:w-1/3 bg-white rounded p-6 shadow-lg">
-          <div class="flex flex-col h-3/4 w-full pb-4">
-            <i class="fas fa-quote-right text-green-400 text-3xl mb-2"></i>
-            <p class="text-justify text-sm text-gray-700 leading-relaxed">
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rem
-              sapiente voluptatum minus atque quod, consequatur, qui sit
-              perferendis eligendi est illum saepe! Voluptatibus ex magni ipsam
-              dignissimos distinctio, odit expedita?
-            </p>
-          </div>
-          <div
-            class="flex flex-row justify-between items-center w-full h-1/4 mt-4">
-            <div class="flex justify-between items-center">
-              <img
-                class="w-16 h-16 md:w-14 md:h-14 rounded-full object-cover border-2 border-green-400 mb-4 md:mb-0"
-                src="https://images.pexels.com/photos/842567/pexels-photo-842567.jpeg?auto=compress&cs=tinysrgb&w=600"
-                alt="Profile Image" />
-              <div class="flex flex-col ml-2 md:ml-4">
-                <span class="text-sm font-medium text-gray-800">John Doe</span>
-                <span class="text-xs text-gray-500">CEO</span>
-              </div>
-            </div>
-            <div class="flex flex-row justify-center items-start ml-2 md:ml-4">
-              <i class="fa-solid fa-star" style="color: #fff700"></i>
-              <i class="fa-solid fa-star" style="color: #fff700"></i>
-              <i class="fa-solid fa-star" style="color: #fff700"></i>
-              <i class="fa-solid fa-star" style="color: #fff700"></i>
-              <i class="fa-solid fa-star" style="color: #fff700"></i>
-            </div>
-          </div>
-        </div>
-        <!-- Main Div Card 1 Ends -->
-        <!-- Main Div Card 2 Starts -->
-        <div
-          class="flex flex-col justify-center items-center w-full sm:w-full md:w-1/2 lg:w-1/3 bg-white rounded p-6 shadow-lg">
-          <div class="flex flex-col h-3/4 w-full pb-4">
-            <i class="fas fa-quote-right text-green-400 text-3xl mb-2"></i>
-            <p class="text-justify text-sm text-gray-700 leading-relaxed">
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rem
-              sapiente voluptatum minus atque quod, consequatur, qui sit
-              perferendis eligendi est illum saepe! Voluptatibus ex magni ipsam
-              dignissimos distinctio, odit expedita?
-            </p>
-          </div>
-          <div
-            class="flex flex-row justify-between items-center w-full h-1/4 mt-4">
-            <div class="flex justify-between items-center">
-              <img
-                class="w-16 h-16 md:w-14 md:h-14 rounded-full object-cover border-2 border-green-400 mb-4 md:mb-0"
-                src="https://images.pexels.com/photos/2381069/pexels-photo-2381069.jpeg?auto=compress&cs=tinysrgb&w=600"
-                alt="Profile Image" />
-              <div class="flex flex-col ml-2 md:ml-4">
-                <span class="text-sm font-medium text-gray-800">Emma John</span>
-                <span class="text-xs text-gray-500">Director</span>
-              </div>
-            </div>
-            <div class="flex flex-row justify-center items-start ml-2 md:ml-4">
-              <i class="fa-solid fa-star" style="color: #fff700"></i>
-              <i class="fa-solid fa-star" style="color: #fff700"></i>
-              <i class="fa-solid fa-star" style="color: #fff700"></i>
-              <i class="fa-solid fa-star" style="color: #fff700"></i>
-              <i class="fa-solid fa-star" style="color: #fff700"></i>
-            </div>
-          </div>
-        </div>
-        <!-- Main Div Card 2 Ends -->
-        <!-- Main Div Card 3 Starts -->
-        <div
-          class="flex flex-col justify-center items-center w-full sm:w-full md:w-1/2 lg:w-1/3 bg-white rounded p-6 shadow-lg">
-          <div class="flex flex-col h-3/4 w-full pb-4">
-            <i class="fas fa-quote-right text-green-400 text-3xl mb-2"></i>
-            <p class="text-justify text-sm text-gray-700 leading-relaxed">
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rem
-              sapiente voluptatum minus atque quod, consequatur, qui sit
-              perferendis eligendi est illum saepe! Voluptatibus ex magni ipsam
-              dignissimos distinctio, odit expedita?
-            </p>
-          </div>
-          <div
-            class="flex flex-row justify-between items-center w-full h-1/4 mt-4">
-            <div class="flex justify-between items-center">
-              <img
-                class="w-16 h-16 md:w-14 md:h-14 rounded-full object-cover border-2 border-green-400 mb-4 md:mb-0"
-                src="https://images.pexels.com/photos/3756681/pexels-photo-3756681.jpeg?auto=compress&cs=tinysrgb&w=600"
-                alt="Profile Image" />
-              <div class="flex flex-col ml-2 md:ml-4">
-                <span class="text-sm font-medium text-gray-800"
-                  >Anny Candy</span
-                >
-                <span class="text-xs text-gray-500">Assistant CEO</span>
-              </div>
-            </div>
-            <div class="flex flex-row justify-center items-start ml-2 md:ml-4">
-              <i class="fa-solid fa-star" style="color: #fff700"></i>
-              <i class="fa-solid fa-star" style="color: #fff700"></i>
-              <i class="fa-solid fa-star" style="color: #fff700"></i>
-              <i class="fa-solid fa-star" style="color: #fff700"></i>
-              <i class="fa-solid fa-star" style="color: #fff700"></i>
-            </div>
-          </div>
-        </div>
-        <!-- Main Div Card 3 Ends -->
-      </div>
-    </section>
-    <!-- Client Review Section Ends Here -->
-
-    <!-- Brand Client Section Starts Here -->
-    <!-- Brand Client Section Starts Here -->
-    <section
-      class="center_d flex flex-wrap justify-around items-center h-max w-full my-10 py-5 px-4 lg:px-0 gap-10 md:gap-0">
-      <i
-        class="fa-brands hover:text-green-600 fa-steam text-6xl text-gray-500"></i>
-      <i
-        class="fa-brands hover:text-green-600 fa-wordpress text-6xl text-gray-500"></i>
-      <i
-        class="fa-brands hover:text-green-600 fa-github text-6xl text-gray-500"></i>
-      <i
-        class="fa-brands hover:text-green-600 fa-stripe text-6xl text-gray-500"></i>
-      <i
-        class="fa-brands hover:text-green-600 fa-windows text-6xl text-gray-500"></i>
-      <i
-        class="fa-brands hover:text-green-600 fa-wix text-6xl text-gray-500"></i>
-    </section>
-    <!-- Brand Client Section Ends Here -->
-    <!-- Newsletter Section Starts Here -->
-
-    <section
-      class="flex flex-col md:flex-row justify-around items-center h-auto md:h-[30vh] w-full mt-4 py-5 px-4 lg:px-8 gap-5 md:gap-0 bg-gray-50">
-      <div
-        class="flex flex-col justify-center items-center w-full md:w-1/2 h-full">
-        <h4 class="text-3xl text-center font-bold text-gray-800 mb-4">
-          Subscribe to our Newsletter
-        </h4>
-        <p class="text-sm text-center text-gray-700 px-4 md:px-8 py-2">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam,
-          quos voluptatibus. Quisquam, quos voluptatibus.
-        </p>
-      </div>
-      <form
-        class="flex flex-col md:flex-row justify-center items-center w-full md:w-1/2 gap-2">
-        <input
-          type="email"
-          id="email"
-          placeholder="Enter your email"
-          class="bg-white border border-green-300 text-gray-900 md:w-64 mb-2 md:mb-0 md:me-4 text-sm rounded-lg focus:ring-green-500 focus:border-green-500 block w-full p-2.5"
-          required />
-        <button
-          type="submit"
-          class="text-white bg-green-700 hover:bg-green-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full md:w-auto px-5 py-2.5">
-          Subscribe
+      <div class="w-full h-12 sm:h-16 lg:h-12 p-1 flex flex-row justify-center items-center">
+        <input type="email" name="email" id="newsltr_mail" placeholder="Enter your email"
+          class="required h-full w-4/5 sm:w-3/4 lg:w-full bg-gray-50 border border-gray-300 text-gray-900 text-xs lg:text-sm rounded-full focus:ring focus:ring-green-500 focus:border-green-500 p-3 sm:p-4 lg:p-4 transition-all duration-300 ease-in-out" />
+        <button type="submit"
+          class="text-white bg-green-600 hover:bg-green-700 focus:ring focus:ring-green-300 focus:border-green-300 focus:outline-none font-normal lg:font-medium rounded-full h-full text-xs lg:text-sm px-4 sm:px-6 lg:px-6 transition-all duration-300 -ml-9 lg:-ml-10 ease-in-out text-center">
+          Submit
         </button>
-        <div class="flex flex-row justify-center items-center">
-          <i
-            class="fa-brands fa-facebook bg-white hover:bg-green-600 rounded-full p-3 cursor-pointer border-gray-200 text-gray-700 hover:text-white"></i>
-          <i
-            class="fa-brands fa-instagram bg-white hover:bg-green-600 rounded-full p-3 cursor-pointer border-gray-200 text-gray-700 hover:text-white"></i>
-          <i
-            class="fa-brands fa-twitter bg-white hover:bg-green-600 rounded-full p-3 cursor-pointer border-gray-200 text-gray-700 hover:text-white"></i>
-          <i
-            class="fa-brands fa-pinterest bg-white hover:bg-green-600 rounded-full p-3 cursor-pointer border-gray-200 text-gray-700 hover:text-white"></i>
-        </div>
-      </form>
-    </section>
-    <!-- Newsletter Section Endss Here -->
+      </div>
 
-    <!-- Footer Section Starts Here -->
-    <footer
-      class="flex flex-col justify-between items-center bg-gray-900 w-full mb-0">
+      <div class="flex flex-row items-center h-5">
+        <input id="remember" type="checkbox" name="remember" value=""
+          class="w-3 h-3 lg:w-4 lg:h-4 border border-gray-300 rounded bg-gray-50 focus:ring-3 focus:ring-blue-300"
+          required />
+        <label for="remember" class="ms-2 text-xs lg:text-sm font-medium text-gray-500">Do not show this window</label>
+      </div>
+    </form>
+  </div>
+  <!-- Newsletter Popup Section Ends -->
+
+  <!-- Slider Section -->
+
+  <div
+    class="image_top_Slider flex flex-col sm:flex-col lg:flex-row max-w-screen-xl sm:max-w-xl lg:max-w-screen-xl w-full justify-between mx-auto items-center mt-2 gap-4">
+    <div class="sec_1 w-full sm:w-3/4 h-full rounded-lg flex flex-col justify-center items-center sm:items-start p-8">
+      <h3 class="text-white text-center sm:text-left text-5xl sm:text-2xl lg:text-5xl font-semibold">
+        Fresh & Healthy<br />Organic Food
+      </h3>
+      <div class="flex flex-col justify-center items-center sm:items-start my-5 px-3 border-l-2 border-gray-100 gap-2">
+        <h4 class="text-white text-lg">
+          Sale up to
+          <span class="bg-green-500 p-1.5 font-semibold">30% OFF</span>
+        </h4>
+        <p class="text-lg text-white font-light">
+          Free shipping on all your orders
+        </p>
+      </div>
+      <a class="bg-white text-center text-base font-bold text-green-500 p-3.5 rounded-full w-48 transform active:border-2 hover:translate-x-2 duration-300 active:bg-white focus:outline-none focus:ring focus:ring-green-500"
+        href="#">Shop now
+        <i class="fa-solid fa-arrow-right ml-3" style="color: #00d85e"></i></a>
+    </div>
+
+    <div class="h-full w-full sm:w-1/2 lg:w-1/4 flex flex-col justify-start items-center gap-3 mt-4 sm:mt-0">
+      <div class="flex flex-col justify-start p-5 items-start sec_2 w-full h-1/2 rounded-lg mb-4 sm:mb-0">
+        <h5 class="text-lg text-gray-600 rounded-lg">SUMMER SALE</h5>
+        <h3 class="text-2xl font-bold text-gray-800">75% OFF</h3>
+        <p class="text-xs font-medium text-gray-600 rounded-lg mt-3">
+          Only Fruits and Vegetables
+        </p>
+        <a class="text-base font-bold text-gray-800 mt-3" href="#">Shop Now<i class="fa-solid fa-arrow-right ml-2"
+            style="color: #101010"></i></a>
+      </div>
+      <div class="flex flex-col justify-center p-5 items-center sec_2 w-full rounded-lg sec_3 h-1/2">
+        <p class="text-xs text-white font-medium">BEST DEALS</p>
+        <h3 class="text-2xl text-white font-semibold mt-2 text-center">
+          Special Products <br />
+          Deal of the Month
+        </h3>
+        <a class="text-base font-semibold text-white mt-3" href="#">Shop Now<i class="fa-solid fa-arrow-right ml-2"
+            style="color: #fff"></i></a>
+      </div>
+    </div>
+  </div>
+  <!-- End of Slider Section -->
+
+  <!-- Trust Section -->
+  <section
+    class="center_d flex flex-col sm:flex-col lg:flex-row w-full h-96 lg:h-32 justify-evenly items-center mt-60 sm:mt-60 lg:mt-6 shadow-xl rounded-md py-10 px-10 sm:px-12 lg:px-10 gap-5 sm:gap-10 lg:gap-5">
+    <div class="flex flex-row justify-between items-center gap-5">
+      <i class="fa-solid fa-truck-fast" style="color: #00bd1f; font-size: 28px"></i>
+      <div class="flex flex-col justify-between items-start">
+        <h3 class="text-base font-semibold text-gray-800">Fast Delivery</h3>
+        <p class="text-sm font-light text-gray-500">
+          Free shipping on all your order
+        </p>
+      </div>
+    </div>
+    <div class="flex flex-row justify-between items-center gap-5">
+      <i class="fa-solid fa-headset" style="color: #00bd1f; font-size: 28px"></i>
+      <div class="flex flex-col justify-between items-start">
+        <h3 class="text-base font-semibold text-gray-800">
+          Customer Support 24/7
+        </h3>
+        <p class="text-sm font-light text-gray-500">
+          Free shipping on all your order
+        </p>
+      </div>
+    </div>
+    <div class="flex flex-row justify-between items-center gap-5">
+      <i class="fa-solid fa-shield-halved" style="color: #00bd1f; font-size: 28px"></i>
+      <div class="flex flex-col justify-between items-start">
+        <h3 class="text-base font-semibold text-gray-800">
+          100% Secure Payment
+        </h3>
+        <p class="text-sm font-light text-gray-500">
+          We ensure your money is save
+        </p>
+      </div>
+    </div>
+    <div class="flex flex-row justify-between items-center gap-5">
+      <i class="fa-solid fa-money-bill-1" style="color: #00bd1f; font-size: 28px"></i>
+      <div class="flex flex-col justify-between items-start">
+        <h3 class="text-base font-semibold text-gray-800">
+          Money-Back Guarantee
+        </h3>
+        <p class="text-sm font-light text-gray-500">
+          We ensure your money is save
+        </p>
+      </div>
+    </div>
+  </section>
+  <!-- End of Trust Section -->
+
+  <!-- Product Catagory -->
+  <section class="center_d flex flex-col flex-wrap justify-between w-full h-max mt-8 py-5 px-4 lg:px-0">
+    <div class="flex flex-row justify-between items-center">
+      <h4 class="text-xl font-bold text-gray-800">Popular Categories</h4>
+      <a class="text-green-500" href="#">View All
+        <i class="fa-solid fa-arrow-right ml-3" style="color: #00d85e"></i></a>
+    </div>
+    <div class="flex flex-row flex-wrap justify-between items-center w-full h-max my-5">
       <div
-        class="flex flex-col gap-4 lg:gap-0 lg:flex-row center_d h-auto lg:h-[52vh] px-2 pt-10 lg:pt-20">
+        class="flex flex-col justify-between items-center w-48 h-48 sm:w-48 p-5 rounded-lg shadow-md hover:shadow-lg hover:border-2 border-green-500">
+        <img class="object-cover p_img"
+          src="https://tgihost.pages.dev/image?id=BQACAgUAAx0EfBziBwADx2WGpWcUU_R3eWqWQCnsEHkNnmmUAAKRDgACOm45VHW4LlOPm1kIMwQ"
+          alt="" />
+        <h5 class="text-sm font-semibold text-gray-800 mt-3">Fresh Fruits</h5>
+      </div>
+      <div
+        class="flex flex-col justify-between items-center w-48 h-48 sm:w-48 p-5 rounded-lg shadow-md hover:shadow-lg hover:border-2 border-green-500">
+        <img class="object-cover p_img"
+          src="https://tgihost.pages.dev/image?id=BQACAgUAAx0EfBziBwADyWWGpbFCbs1eYVjDBHDuER4dWxutAAKWDgACOm45VM-gYzt_5XXHMwQ"
+          alt="" />
+        <h5 class="text-sm font-semibold text-gray-800 mt-3">
+          Fresh Vegetables
+        </h5>
+      </div>
+      <div
+        class="flex flex-col justify-between items-center w-48 h-48 sm:w-48 p-5 rounded-lg shadow-md hover:shadow-lg hover:border-2 border-green-500">
+        <img class="object-cover p_img"
+          src="https://tgihost.pages.dev/image?id=BQACAgUAAx0EfBziBwADymWGpcsCMql_cNqO0XvLDGzDC0nrAAKYDgACOm45VGfy_tytxxtXMwQ"
+          alt="" />
+        <h5 class="text-sm font-semibold text-gray-800 mt-3">Meat & Fish</h5>
+      </div>
+      <div
+        class="flex flex-col justify-between items-center w-48 h-48 sm:w-48 p-5 rounded-lg shadow-md hover:shadow-lg hover:border-2 border-green-500">
+        <img class="object-cover p_img"
+          src="https://tgihost.pages.dev/image?id=BQACAgUAAx0EfBziBwADy2WGpd6o7ysy_eVizxXbJh07-siaAAKaDgACOm45VIZKCnclA0V6MwQ"
+          alt="" />
+        <h5 class="text-sm font-semibold text-gray-800 mt-3">Snacks</h5>
+      </div>
+      <div
+        class="flex flex-col justify-between items-center w-48 h-48 sm:w-48 p-5 rounded-lg shadow-md hover:shadow-lg hover:border-2 border-green-500">
+        <img class="object-cover p_img"
+          src="https://tgihost.pages.dev/image?id=BQACAgUAAx0EfBziBwADzGWGpe_AVh2YoP_pO7inxzxxRsU2AAKdDgACOm45VFELWTHvv1YGMwQ"
+          alt="" />
+        <h5 class="text-sm font-semibold text-gray-800 mt-3">Beverages</h5>
+      </div>
+      <div
+        class="flex flex-col justify-between items-center w-48 h-48 sm:w-48 p-5 rounded-lg shadow-md hover:shadow-lg hover:border-2 border-green-500">
+        <img class="object-cover p_img"
+          src="https://tgihost.pages.dev/image?id=BQACAgUAAx0EfBziBwADzWWGpgL81eGNrlS9Z0POVHx_JAABRwACnw4AAjpuOVRF8X3onFyCKDME"
+          alt="" />
+        <h5 class="text-sm font-semibold text-gray-800 mt-3">
+          Beauty & Health
+        </h5>
+      </div>
+    </div>
+
+    <!-- Second Row -->
+
+    <div class="flex flex-row flex-wrap justify-between items-center w-full h-max my-1">
+      <div
+        class="flex flex-col justify-between items-center w-48 h-48 sm:w-48 p-5 rounded-lg shadow-md hover:shadow-lg hover:border-2 border-green-500">
+        <img class="object-cover p_img"
+          src="https://tgihost.pages.dev/image?id=BQACAgUAAx0EfBziBwADzmWGphw9AaNtbwIeJs05cZHqk9FeAAKgDgACOm45VEtYDf0BzHI1MwQ"
+          alt="" />
+        <h5 class="text-sm font-semibold text-gray-800 mt-3">
+          Bread & Bakery
+        </h5>
+      </div>
+      <div
+        class="flex flex-col justify-between items-center w-48 h-48 sm:w-48 p-5 rounded-lg shadow-md hover:shadow-lg hover:border-2 border-green-500">
+        <img class="object-cover p_img"
+          src="https://tgihost.pages.dev/image?id=BQACAgUAAx0EfBziBwADz2WGpiyzkLca4AjAeb0aqBxVXVDyAAKhDgACOm45VH1i-03mnHPMMwQ"
+          alt="" />
+        <h5 class="text-sm font-semibold text-gray-800 mt-3">Baking Needs</h5>
+      </div>
+      <div
+        class="flex flex-col justify-between items-center w-48 h-48 sm:w-48 p-5 rounded-lg shadow-md hover:shadow-lg hover:border-2 border-green-500">
+        <img class="object-cover p_img"
+          src="https://tgihost.pages.dev/image?id=BQACAgUAAx0EfBziBwAD0GWGpj8WnWck6HhLM0-uUaQl81-WAAKiDgACOm45VNoFMXXq_fV2MwQ"
+          alt="" />
+        <h5 class="text-sm font-semibold text-gray-800 mt-3">Cooking</h5>
+      </div>
+      <div
+        class="flex flex-col justify-between items-center w-48 h-48 sm:w-48 p-5 rounded-lg shadow-md hover:shadow-lg hover:border-2 border-green-500">
+        <img class="object-cover p_img"
+          src="https://tgihost.pages.dev/image?id=BQACAgUAAx0EfBziBwAD0WWGplMmB8FoSTiKIPYIYua_1fnqAAKjDgACOm45VMhxBQVMPBI3MwQ"
+          alt="" />
+        <h5 class="text-sm font-semibold text-gray-800 mt-3">
+          Diabetic Food
+        </h5>
+      </div>
+      <div
+        class="flex flex-col justify-between items-center w-48 h-48 sm:w-48 p-5 rounded-lg shadow-md hover:shadow-lg hover:border-2 border-green-500">
+        <img class="object-cover p_img"
+          src="https://tgihost.pages.dev/image?id=BQACAgUAAx0EfBziBwAD0mWGpmN7qsp-90GKKtMLzJLTodGEAAKkDgACOm45VNGLeoHLQRmvMwQ"
+          alt="" />
+        <h5 class="text-sm font-semibold text-gray-800 mt-3">
+          Dish Detergents
+        </h5>
+      </div>
+      <div
+        class="flex flex-col justify-between items-center w-48 h-48 sm:w-48 p-5 rounded-lg shadow-md hover:shadow-lg hover:border-2 border-green-500">
+        <img class="object-cover p_img"
+          src="https://tgihost.pages.dev/image?id=BQACAgUAAx0EfBziBwAD02WGpnLTkzk575Rz73X5prNRh-8dAAKlDgACOm45VNz-HwXNa1duMwQ"
+          alt="" />
+        <h5 class="text-sm font-semibold text-gray-800 mt-3">Oil</h5>
+      </div>
+    </div>
+  </section>
+  <!-- End of Product Catagory -->
+
+  <!-- Product Section -->
+  <section class="center_d flex flex-col flex-wrap justify-between w-full h-max mt-8 py-5 px-4 lg:px-0">
+    <div class="sm:center_d flex flex-row justify-between items-center">
+      <h4 class="text-xl font-bold text-gray-800">Popular Products</h4>
+      <a class="text-green-500" href="#">View All
+        <i class="fa-solid fa-arrow-right ml-3" style="color: #00d85e"></i></a>
+    </div>
+
+    <!-- First Row -->
+
+    <div class="center_d flex flex-row flex-wrap justify-between items-center w-full h-max my-6">
+      <div
+        class="flex flex-col justify-evenly items-start w-48 h-80 sm:w-80 lg:w-64 p-3.5 rounded-lg shadow-md hover:shadow-lg hover:border-2 border-green-500">
+        <p class="bg-red-500 text-white p-2 text-xs top-0 left-0 rounded-sm">
+          Sale 50%
+        </p>
+        <img class="sec_p_img"
+          src="https://tgihost.pages.dev/image?id=BQACAgUAAx0EfBziBwAD1GWGppZNzTPKQbXejS0LTA37TDPDAAKmDgACOm45VPo5xG0aiDhuMwQ"
+          alt="" />
+        <div class="flex flex-row justify-between items-center w-full mt-2">
+          <div class="flex flex-col justify-center items-start">
+            <h5 class="text-sm font-semibold text-gray-600 rounded-lg">
+              Green Apple <br /><i class="fa-solid fa-star" style="color: #ffdd00"></i><i class="fa-solid fa-star"
+                style="color: #ffdd00"></i><i class="fa-solid fa-star" style="color: #ffdd00"></i><i
+                class="fa-solid fa-star" style="color: #ffdd00"></i>
+            </h5>
+            <p class="text-lg font-bold text-gray-900 mt-1">
+              $15.00
+              <span class="text-xs text-gray-500 line-through ml-2">$30.00</span>
+            </p>
+          </div>
+          <span class="text-xl text-gray-800 hover:text-green-500 border-gray-800 rounded-full p-1"><i
+              class="fa-solid fa-cart-plus"></i></span>
+        </div>
+      </div>
+      <div
+        class="flex flex-col justify-evenly items-start w-48 h-80 sm:w-80 lg:w-64 p-3.5 rounded-lg shadow-md hover:shadow-lg hover:border-2 border-green-500">
+        <!-- <p class="bg-red-500 text-white p-2 text-xs  top-0 left-0 rounded-sm">Sale 50%</p> -->
+        <img class="sec_p_img"
+          src="https://tgihost.pages.dev/image?id=BQACAgUAAx0EfBziBwAD1WWGpq1-27S5Xg5Ud6mLDXEIHaHKAAKnDgACOm45VDD_xsMpxKvDMwQ"
+          alt="" />
+        <div class="flex flex-row justify-between items-center w-full mt-2">
+          <div class="flex flex-col justify-center items-start">
+            <h5 class="text-sm font-semibold text-gray-600 rounded-lg">
+              Fresh Indiar Malta <br /><i class="fa-solid fa-star" style="color: #ffdd00"></i><i
+                class="fa-solid fa-star" style="color: #ffdd00"></i><i class="fa-solid fa-star"
+                style="color: #ffdd00"></i><i class="fa-solid fa-star" style="color: #ffdd00"></i>
+            </h5>
+            <p class="text-lg font-bold text-gray-900 mt-1">$20.00</p>
+          </div>
+          <span class="text-xl text-gray-800 hover:text-green-500 border-gray-800 rounded-full p-1"><i
+              class="fa-solid fa-cart-plus"></i></span>
+        </div>
+      </div>
+      <div
+        class="flex flex-col justify-evenly items-start w-48 h-80 sm:w-80 lg:w-64 p-3.5 rounded-lg shadow-md hover:shadow-lg hover:border-2 border-green-500">
+        <!-- <p class="bg-red-500 text-white p-2 text-xs  top-0 left-0 rounded-sm">Sale 50%</p> -->
+        <img class="sec_p_img"
+          src="https://tgihost.pages.dev/image?id=BQACAgUAAx0EfBziBwAD1mWGpsI2v9iKAaoPO4j7k6h4AzhJAAKoDgACOm45VE_DDtPLoLStMwQ"
+          alt="" />
+        <div class="flex flex-row justify-between items-center w-full p-3 mt-2">
+          <div class="flex flex-col justify-center items-start">
+            <h5 class="text-sm font-semibold text-gray-600 rounded-lg">
+              Chinese cabbage <br /><i class="fa-solid fa-star" style="color: #ffdd00"></i><i class="fa-solid fa-star"
+                style="color: #ffdd00"></i><i class="fa-solid fa-star" style="color: #ffdd00"></i><i
+                class="fa-solid fa-star" style="color: #ffdd00"></i>
+            </h5>
+            <p class="text-lg font-bold text-gray-900 mt-1">$12.00</p>
+          </div>
+          <span class="text-xl text-gray-800 hover:text-green-500 border-gray-800 rounded-full p-1"><i
+              class="fa-solid fa-cart-plus"></i></span>
+        </div>
+      </div>
+      <div
+        class="flex flex-col justify-evenly items-start w-48 h-80 sm:w-80 lg:w-64 p-3.5 rounded-lg shadow-md hover:shadow-lg hover:border-2 border-green-500">
+        <!-- <p class="bg-red-500 text-white p-2 text-xs  top-0 left-0 rounded-sm">Sale 50%</p> -->
+        <img class="sec_p_img"
+          src="https://tgihost.pages.dev/image?id=BQACAgUAAx0EfBziBwAD12WGptbHB0qXTG7wwwRVg4R9zpbnAAKpDgACOm45VKjx6O3Q-8-BMwQ"
+          alt="" />
+        <div class="flex flex-row justify-between items-center w-full mt-2">
+          <div class="flex flex-col justify-center items-start">
+            <h5 class="text-sm font-semibold text-gray-600 rounded-lg">
+              Green Lettuce <br /><i class="fa-solid fa-star" style="color: #ffdd00"></i><i class="fa-solid fa-star"
+                style="color: #ffdd00"></i><i class="fa-solid fa-star" style="color: #ffdd00"></i><i
+                class="fa-solid fa-star" style="color: #ffdd00"></i>
+            </h5>
+            <p class="text-lg font-bold text-gray-900 mt-1">$9.00</p>
+          </div>
+          <span class="text-xl text-gray-800 hover:text-green-500 border-gray-800 rounded-full p-1"><i
+              class="fa-solid fa-cart-plus"></i></span>
+        </div>
+      </div>
+      <div
+        class="flex flex-col justify-evenly items-start w-48 h-80 sm:w-80 lg:w-64 p-3.5 rounded-lg shadow-md hover:shadow-lg hover:border-2 border-green-500">
+        <!-- <p class="bg-red-500 text-white p-2 text-xs  top-0 left-0 rounded-sm">Sale 50%</p> -->
+        <img class="sec_p_img"
+          src="https://tgihost.pages.dev/image?id=BQACAgUAAx0EfBziBwAD2GWGpu4SiFMgEq0lDjit7KMNV_pLAAKqDgACOm45VO6NUMPRBNsoMwQ"
+          alt="" />
+        <div class="flex flex-row justify-between items-center w-full p-3 mt-2">
+          <div class="flex flex-col justify-center items-start">
+            <h5 class="text-sm font-semibold text-gray-600 rounded-lg">
+              EggPlant <br /><i class="fa-solid fa-star" style="color: #ffdd00"></i><i class="fa-solid fa-star"
+                style="color: #ffdd00"></i><i class="fa-solid fa-star" style="color: #ffdd00"></i><i
+                class="fa-solid fa-star" style="color: #ffdd00"></i>
+            </h5>
+            <p class="text-lg font-bold text-gray-900 mt-1">$34.00</p>
+          </div>
+          <span class="text-xl text-gray-800 hover:text-green-500 border-gray-800 rounded-full p-1"><i
+              class="fa-solid fa-cart-plus"></i></span>
+        </div>
+      </div>
+    </div>
+    <!-- First Row Ends -->
+
+    <!-- Second Row -->
+
+    <div class="center_d flex flex-row flex-wrap justify-between items-center w-full h-max my-6">
+      <div
+        class="flex flex-col justify-evenly items-start w-48 h-80 sm:w-80 lg:w-64 p-3.5 rounded-lg shadow-md hover:shadow-lg hover:border-2 border-green-500">
+        <!-- <p class="bg-red-500 text-white p-2 text-xs top-0 left-0 rounded-sm">Sale 50%</p> -->
+        <img class="sec_p_img"
+          src="https://tgihost.pages.dev/image?id=BQACAgUAAx0EfBziBwAD2WWGpwet8ezxHOxXAtDiXnM_uqnaAAKsDgACOm45VB2etND03ubKMwQ"
+          alt="" />
+        <div class="flex flex-row justify-between items-center w-full mt-2">
+          <div class="flex flex-col justify-center items-start">
+            <h5 class="text-sm font-semibold text-gray-600 rounded-lg">
+              Big Potatoes <br /><i class="fa-solid fa-star" style="color: #ffdd00"></i><i class="fa-solid fa-star"
+                style="color: #ffdd00"></i><i class="fa-solid fa-star" style="color: #ffdd00"></i><i
+                class="fa-solid fa-star" style="color: #ffdd00"></i>
+            </h5>
+            <p class="text-lg font-bold text-gray-900 mt-1">$20.00</p>
+          </div>
+          <span class="text-xl text-gray-800 hover:text-green-500 border-gray-800 rounded-full p-1"><i
+              class="fa-solid fa-cart-plus"></i></span>
+        </div>
+      </div>
+      <div
+        class="flex flex-col justify-evenly items-start w-48 h-80 sm:w-80 lg:w-64 p-3.5 rounded-lg shadow-md hover:shadow-lg hover:border-2 border-green-500">
+        <!-- <p class="bg-red-500 text-white p-2 text-xs  top-0 left-0 rounded-sm">Sale 50%</p> -->
+        <img class="sec_p_img"
+          src="https://tgihost.pages.dev/image?id=BQACAgUAAx0EfBziBwAD2mWGpx3aN0iKGsPLZwcgXaxK9rUfAAKtDgACOm45VNA6Mhpu3aJ8MwQ"
+          alt="" />
+        <div class="flex flex-row justify-between items-center w-full mt-2">
+          <div class="flex flex-col justify-center items-start">
+            <h5 class="text-sm font-semibold text-gray-600 rounded-lg">
+              Corn <br /><i class="fa-solid fa-star" style="color: #ffdd00"></i><i class="fa-solid fa-star"
+                style="color: #ffdd00"></i><i class="fa-solid fa-star" style="color: #ffdd00"></i><i
+                class="fa-solid fa-star" style="color: #ffdd00"></i>
+            </h5>
+            <p class="text-lg font-bold text-gray-900 mt-1">$20.00</p>
+          </div>
+          <span class="text-xl text-gray-800 hover:text-green-500 border-gray-800 rounded-full p-1"><i
+              class="fa-solid fa-cart-plus"></i></span>
+        </div>
+      </div>
+      <div
+        class="flex flex-col justify-evenly items-start w-48 h-80 sm:w-80 lg:w-64 p-3.5 rounded-lg shadow-md hover:shadow-lg hover:border-2 border-green-500">
+        <!-- <p class="bg-red-500 text-white p-2 text-xs  top-0 left-0 rounded-sm">Sale 50%</p> -->
+        <img class="sec_p_img"
+          src="https://tgihost.pages.dev/image?id=BQACAgUAAx0EfBziBwAD22WGpzK7qG3jMIguDOUyqQ3VBFecAALeCwACHjM4VIOzYaED9x6rMwQ"
+          alt="" />
+        <div class="flex flex-row justify-between items-center w-full p-3 mt-2">
+          <div class="flex flex-col justify-center items-start">
+            <h5 class="text-sm font-semibold text-gray-600 rounded-lg">
+              Fresh Cauliflower<br /><i class="fa-solid fa-star" style="color: #ffdd00"></i><i class="fa-solid fa-star"
+                style="color: #ffdd00"></i><i class="fa-solid fa-star" style="color: #ffdd00"></i><i
+                class="fa-solid fa-star" style="color: #ffdd00"></i>
+            </h5>
+            <p class="text-lg font-bold text-gray-900 mt-1">$12.00</p>
+          </div>
+          <span class="text-xl text-gray-800 hover:text-green-500 border-gray-800 rounded-full p-1"><i
+              class="fa-solid fa-cart-plus"></i></span>
+        </div>
+      </div>
+      <div
+        class="flex flex-col justify-evenly items-start w-48 h-80 sm:w-80 lg:w-64 p-3.5 rounded-lg shadow-md hover:shadow-lg hover:border-2 border-green-500">
+        <p class="bg-red-500 text-white p-2 text-xs top-0 left-0 rounded-sm">
+          Sale 50%
+        </p>
+        <img class="sec_p_img"
+          src="https://tgihost.pages.dev/image?id=BQACAgUAAx0EfBziBwAD3GWGp0f-ziTMhHZl1mAdILJm0odeAAKuDgACOm45VLxDmcYGeZwLMwQ"
+          alt="" />
+        <div class="flex flex-row justify-between items-center w-full mt-2">
+          <div class="flex flex-col justify-center items-start">
+            <h5 class="text-sm font-semibold text-gray-600 rounded-lg">
+              Green Capsicum <br /><i class="fa-solid fa-star" style="color: #ffdd00"></i><i class="fa-solid fa-star"
+                style="color: #ffdd00"></i><i class="fa-solid fa-star" style="color: #ffdd00"></i><i
+                class="fa-solid fa-star" style="color: #ffdd00"></i>
+            </h5>
+            <p class="text-lg font-bold text-gray-900 mt-1">
+              $9.00
+              <span class="text-xs text-gray-500 line-through ml-2">$20.00</span>
+            </p>
+          </div>
+          <span class="text-xl text-gray-800 hover:text-green-500 border-gray-800 rounded-full p-1"><i
+              class="fa-solid fa-cart-plus"></i></span>
+        </div>
+      </div>
+      <div
+        class="flex flex-col justify-evenly items-start w-48 h-80 sm:w-80 lg:w-64 p-3.5 rounded-lg shadow-md hover:shadow-lg hover:border-2 border-green-500">
+        <!-- <p class="bg-red-500 text-white p-2 text-xs  top-0 left-0 rounded-sm">Sale 50%</p> -->
+        <img class="sec_p_img"
+          src="https://tgihost.pages.dev/image?id=BQACAgUAAx0EfBziBwAD3WWGp10pfREvZw6MWXQYGa5rDNMNAAKvDgACOm45VOpBqbQGIbgUMwQ"
+          alt="" />
+        <div class="flex flex-row justify-between items-center w-full p-3 mt-2">
+          <div class="flex flex-col justify-center items-start">
+            <h5 class="text-sm font-semibold text-gray-600 rounded-lg">
+              Green Chili <br /><i class="fa-solid fa-star" style="color: #ffdd00"></i><i class="fa-solid fa-star"
+                style="color: #ffdd00"></i><i class="fa-solid fa-star" style="color: #ffdd00"></i><i
+                class="fa-solid fa-star" style="color: #ffdd00"></i>
+            </h5>
+            <p class="text-lg font-bold text-gray-900 mt-1">$34.00</p>
+          </div>
+          <span class="text-xl text-gray-800 hover:text-green-500 border-gray-800 rounded-full p-1"><i
+              class="fa-solid fa-cart-plus"></i></span>
+        </div>
+      </div>
+    </div>
+    <!-- Second Row Ends -->
+  </section>
+  <!-- End of Product Section -->
+
+  <!-- Banner Section Starts -->
+  <section class="center_d flex flex-col lg:flex-row h-max justify-between items-center my-5 gap-5">
+    <!-- First Banner -->
+    <div id="bann_1"
+      class="center_d w-full lg:w-4/12 h-[540px] rounded-lg flex flex-col justify-start items-center pt-12">
+      <h4 class="text-lg text-center font-medium text-gray-800">
+        BEST DEALS
+      </h4>
+      <h2 class="text-center font-semibold text-gray-800 text-4xl mt-2">
+        Sale of the Month
+      </h2>
+      <div class="flex flex-row w-full justify-center items-center h-max py-4 px-6 gap-2 mx-auto">
+        <div class="text-lg bg-blue-600 p-2 text-white text-center">
+          00 <br />
+          DAYS
+        </div>
+        <div class="text-lg bg-green-600 p-2 text-white text-center">
+          02 <br />
+          HOURS
+        </div>
+        <div class="text-lg bg-red-600 p-2 text-white text-center">
+          18 <br />
+          MINS
+        </div>
+        <div class="text-lg bg-gray-600 p-2 text-white text-center">
+          46 <br />
+          SECS
+        </div>
+      </div>
+      <a class="bg-white text-center text-base font-bold text-green-500 mt-2 p-3.5 rounded-full w-48 transform active:border-2 hover:translate-x-2 duration-300 active:bg-white focus:outline-none focus:ring focus:ring-green-500"
+        href="#">Shop now
+        <i class="fa-solid fa-arrow-right ml-3" style="color: #00ff26"></i></a>
+    </div>
+    <!-- Second Banner -->
+    <div id="bann_2"
+      class="center_d w-full lg:w-4/12 h-[540px] rounded-lg flex flex-col justify-start items-center pt-12 gap-6">
+      <h4 class="text-lg text-center font-medium text-white">85% FAT FREE</h4>
+      <h2 class="text-center font-semibold text-white text-4xl mt-2">
+        Low-Fat Meat
+      </h2>
+      <p class="text-lg text-white font-medium">
+        Started at
+        <span class="bg-white text-gray-700 font-bold py-2 px-4 ml-1 rounded-md text-base">$79.99</span>
+      </p>
+      <a class="bg-green-500 text-center text-base font-bold text-white mt-2 p-3.5 rounded-full w-48 transform active:border-2 hover:translate-x-2 duration-300 active:bg-white focus:outline-none focus:ring focus:ring-green-500"
+        href="#">Shop now
+        <i class="fa-solid fa-arrow-right ml-3" style="color: #fff"></i></a>
+    </div>
+    <!-- Third Banner -->
+    <div id="bann_3"
+      class="center_d w-full lg:w-4/12 h-[540px] rounded-lg flex flex-col justify-start items-center pt-12 gap-6">
+      <h4 class="text-lg text-center font-medium text-white">SUMMER SALE</h4>
+      <h2 class="text-center font-semibold text-white text-4xl mt-2">
+        100% Fresh Fruit
+      </h2>
+      <p class="text-lg text-white font-medium">
+        Up to
+        <span class="bg-yellow-300 text-gray-900 font-bold py-2 px-4 ml-1 rounded-md text-base">65% OFF</span>
+      </p>
+      <a class="bg-white text-center text-base font-bold text-green-500 mt-2 p-3.5 rounded-full w-48 transform active:border-2 hover:translate-x-2 duration-300 active:bg-white focus:outline-none focus:ring focus:ring-green-500"
+        href="#">Shop now
+        <i class="fa-solid fa-arrow-right ml-3" style="color: #00ff26"></i></a>
+    </div>
+  </section>
+  <!-- Banner Section Ends -->
+
+  <!-- NewsLetter Section Starts -->
+  <section
+    class="center_d flex flex-wrap flex-col lg:flex-row h-[450px] sm:h-[450px] md:[430px] lg:h-[358px] justify-end items-end sm:items-end lg:items-center my-5 bg-[url(https://tgihost.pages.dev/image?id=BQACAgUAAx0EfBziBwAD4WWGqFWimmJEeAE1knTPz58HiEYDAAKzDgACOm45VAFrYQHu7d9xMwQ)] bg-cover rounded-lg">
+    <div class="flex flex-col h-full w-2/5 sm:w-2/5 lg:w-1/3 justify-center items-start py-5 lg:px-1 text-white gap-3">
+      <p>SUMMER SALE</p>
+      <h2 class="text-4xl font-semibold">
+        <span class="text-green-400">37%</span> OFF
+      </h2>
+      <p class="text-xs lg:text-sm">
+        Free on all your order, Free Shipping and 30 days <br />
+        money-back guarantee
+      </p>
+      <a class="bg-green-500 text-center text-xs lg:text-base font-medium lg:font-bold text-white mt-2 p-3.5 rounded-full sm:w-32 lg:w-48 transform active:border-2 hover:translate-x-2 duration-300 focus:outline-none focus:ring focus:ring-green-500"
+        href="#">Shop now
+        <i class="fa-solid fa-arrow-right ml-3" style="color: #fff"></i></a>
+    </div>
+  </section>
+  <!-- NewsLetter Section Ends -->
+
+  <!-- Featured Product Catagory -->
+  <section class="center_d flex flex-col justify-between w-full h-max mt-8 py-5 px-4 lg:px-0">
+    <div class="sm:center_d flex flex-row justify-between items-center">
+      <h4 class="text-xl font-bold text-gray-800">Featured Products</h4>
+      <a class="text-green-500" href="#">View All
+        <i class="fa-solid fa-arrow-right ml-3" style="color: #00d85e"></i></a>
+    </div>
+    <div class="center_d flex flex-row flex-wrap justify-between items-center w-full h-max my-6">
+      <div
+        class="flex flex-col justify-evenly items-start w-48 h-80 sm:w-80 lg:w-64 p-3.5 rounded-lg shadow-md hover:shadow-lg hover:border-2 border-green-500">
+        <!-- <p class="bg-red-500 text-white p-2 text-xs  top-0 left-0 rounded-sm">Sale 50%</p> -->
+        <img class="sec_p_img"
+          src="https://tgihost.pages.dev/image?id=BQACAgUAAx0EfBziBwAD1WWGpq1-27S5Xg5Ud6mLDXEIHaHKAAKnDgACOm45VDD_xsMpxKvDMwQ"
+          alt="" />
+        <div class="flex flex-row justify-between items-center w-full mt-2">
+          <div class="flex flex-col justify-center items-start">
+            <h5 class="text-sm font-semibold text-gray-600 rounded-lg">
+              Fresh Indiar Malta <br /><i class="fa-solid fa-star" style="color: #ffdd00"></i><i
+                class="fa-solid fa-star" style="color: #ffdd00"></i><i class="fa-solid fa-star"
+                style="color: #ffdd00"></i><i class="fa-solid fa-star" style="color: #ffdd00"></i>
+            </h5>
+            <p class="text-lg font-bold text-gray-900 mt-1">$20.00</p>
+          </div>
+          <span class="text-xl text-gray-800 hover:text-green-500 border-gray-800 rounded-full p-1"><i
+              class="fa-solid fa-cart-plus"></i></span>
+        </div>
+      </div>
+      <div
+        class="flex flex-col justify-evenly items-start w-48 h-80 sm:w-80 lg:w-64 p-3.5 rounded-lg shadow-md hover:shadow-lg hover:border-2 border-green-500">
+        <!-- <p class="bg-red-500 text-white p-2 text-xs top-0 left-0 rounded-sm">Sale 50%</p> -->
+        <img class="sec_p_img"
+          src="https://tgihost.pages.dev/image?id=BQACAgUAAx0EfBziBwAD1GWGppZNzTPKQbXejS0LTA37TDPDAAKmDgACOm45VPo5xG0aiDhuMwQ"
+          alt="" />
+        <div class="flex flex-row justify-between items-center w-full mt-2">
+          <div class="flex flex-col justify-center items-start">
+            <h5 class="text-sm font-semibold text-gray-600 rounded-lg">
+              Green Apple <br /><i class="fa-solid fa-star" style="color: #ffdd00"></i><i class="fa-solid fa-star"
+                style="color: #ffdd00"></i><i class="fa-solid fa-star" style="color: #ffdd00"></i><i
+                class="fa-solid fa-star" style="color: #ffdd00"></i>
+            </h5>
+            <p class="text-lg font-bold text-gray-900 mt-1">
+              $15.00
+              <span class="text-xs text-gray-500 line-through ml-2">$30.00</span>
+            </p>
+          </div>
+          <span class="text-xl text-gray-800 hover:text-green-500 border-gray-800 rounded-full p-1"><i
+              class="fa-solid fa-cart-plus"></i></span>
+        </div>
+      </div>
+      <div
+        class="flex flex-col justify-evenly items-start w-48 h-80 sm:w-80 lg:w-64 p-3.5 rounded-lg shadow-md hover:shadow-lg hover:border-2 border-green-500">
+        <!-- <p class="bg-red-500 text-white p-2 text-xs  top-0 left-0 rounded-sm">Sale 50%</p> -->
+        <img class="sec_p_img"
+          src="https://tgihost.pages.dev/image?id=BQACAgUAAx0EfBziBwAD2GWGpu4SiFMgEq0lDjit7KMNV_pLAAKqDgACOm45VO6NUMPRBNsoMwQ"
+          alt="" />
+        <div class="flex flex-row justify-between items-center w-full p-3 mt-2">
+          <div class="flex flex-col justify-center items-start">
+            <h5 class="text-sm font-semibold text-gray-600 rounded-lg">
+              EggPlant <br /><i class="fa-solid fa-star" style="color: #ffdd00"></i><i class="fa-solid fa-star"
+                style="color: #ffdd00"></i><i class="fa-solid fa-star" style="color: #ffdd00"></i><i
+                class="fa-solid fa-star" style="color: #ffdd00"></i>
+            </h5>
+            <p class="text-lg font-bold text-gray-900 mt-1">$34.00</p>
+          </div>
+          <span class="text-xl text-gray-800 hover:text-green-500 border-gray-800 rounded-full p-1"><i
+              class="fa-solid fa-cart-plus"></i></span>
+        </div>
+      </div>
+      <div
+        class="flex flex-col justify-evenly items-start w-48 h-80 sm:w-80 lg:w-64 p-3.5 rounded-lg shadow-md hover:shadow-lg hover:border-2 border-green-500">
+        <!-- <p class="bg-red-500 text-white p-2 text-xs  top-0 left-0 rounded-sm">Sale 50%</p> -->
+        <img class="sec_p_img"
+          src="https://tgihost.pages.dev/image?id=BQACAgUAAx0EfBziBwAD1mWGpsI2v9iKAaoPO4j7k6h4AzhJAAKoDgACOm45VE_DDtPLoLStMwQ"
+          alt="" />
+        <div class="flex flex-row justify-between items-center w-full p-3 mt-2">
+          <div class="flex flex-col justify-center items-start">
+            <h5 class="text-sm font-semibold text-gray-600 rounded-lg">
+              Chinese cabbage <br /><i class="fa-solid fa-star" style="color: #ffdd00"></i><i class="fa-solid fa-star"
+                style="color: #ffdd00"></i><i class="fa-solid fa-star" style="color: #ffdd00"></i><i
+                class="fa-solid fa-star" style="color: #ffdd00"></i>
+            </h5>
+            <p class="text-lg font-bold text-gray-900 mt-1">$12.00</p>
+          </div>
+          <span class="text-xl text-gray-800 hover:text-green-500 border-gray-800 rounded-full p-1"><i
+              class="fa-solid fa-cart-plus"></i></span>
+        </div>
+      </div>
+      <div
+        class="flex flex-col justify-evenly items-start w-48 h-80 sm:w-80 lg:w-64 p-3.5 rounded-lg shadow-md hover:shadow-lg hover:border-2 border-green-500">
+        <!-- <p class="bg-red-500 text-white p-2 text-xs  top-0 left-0 rounded-sm">Sale 50%</p> -->
+        <img class="sec_p_img"
+          src="https://tgihost.pages.dev/image?id=BQACAgUAAx0EfBziBwAD12WGptbHB0qXTG7wwwRVg4R9zpbnAAKpDgACOm45VKjx6O3Q-8-BMwQ"
+          alt="" />
+        <div class="flex flex-row justify-between items-center w-full mt-2">
+          <div class="flex flex-col justify-center items-start">
+            <h5 class="text-sm font-semibold text-gray-600 rounded-lg">
+              Green Lettuce <br /><i class="fa-solid fa-star" style="color: #ffdd00"></i><i class="fa-solid fa-star"
+                style="color: #ffdd00"></i><i class="fa-solid fa-star" style="color: #ffdd00"></i><i
+                class="fa-solid fa-star" style="color: #ffdd00"></i>
+            </h5>
+            <p class="text-lg font-bold text-gray-900 mt-1">$9.00</p>
+          </div>
+          <span class="text-xl text-gray-800 hover:text-green-500 border-gray-800 rounded-full p-1"><i
+              class="fa-solid fa-cart-plus"></i></span>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End of Featured Product Section -->
+
+  <!-- News Section Starts Here -->
+  <section class="center_d flex flex-col flex-wrap justify-between w-full h-max mt-8 py-5 px-4 lg:px-0">
+    <h4 class="text-2xl text-center mb-10 font-bold text-gray-800">
+      Latest News
+    </h4>
+    <div
+      class="flex flex-col sm:flex-col w-full h-full lg:flex-row justify-between items-center gap-10 sm:gap-9 lg:gap-4 cursor-pointer">
+      <!-- Main News  Card 1 1 Starts -->
+      <div
+        class="flex flex-col justify-between items-center h-[494px] rounded-lg max-h-full w-full sm:w-full lg:w-1/3 shadow-sm hover:shadow-2xl transform duration-500">
         <div
-          class="flex flex-col h-auto lg:h-[52vh] w-11/12 lg:w-2/5 justify-center lg:justify-start items-center lg:items-start gap-4">
-          <h1 class="text-white text-3xl">
-            <i class="fa-solid fa-leaf text-3xl text-green-600 mr-5"></i
-            >Ecobazar
-          </h1>
-          <p class="text-gray-500 text-sm">
-            Morbi cursus porttitor enim lobortis molestie. <br />
-            Duis gravida turpis dui, eget bibendum magna <br />
-            congue nec.
+          class="w-full h-4/6 rounded-t-lg bg-[url(https://tgihost.pages.dev/image?id=BQACAgUAAx0EfBziBwAD4mWGqcNoKE9RBCpU0f29O8dOi_dwAAK3DgACOm45VAuOw3i1HTQpMwQ)] bg-cover">
+          <div class="bg-white inline-block text-center px-4 py-2 relative top-3/4 left-5 rounded-md">
+            <h2 class="text-base font-semibold text-gray-800">18</h2>
+            <p class="text-base text-gray-700">NOV</p>
+          </div>
+        </div>
+        <div
+          class="flex flex-col justify-evenly h-2/6 w-full rounded-lg border-b-2 border-l-2 border-r-2 border-gray-100">
+          <div class="flex flex-row p-2 gap-3 text-sm">
+            <p><i class="fa-solid fa-tag mx-2 text-gray-500"></i>Food</p>
+            <p><i class="fa-solid fa-user mx-2 text-gray-500"></i>By Admin</p>
+            <p>
+              <i class="fa-solid fa-message mx-2 text-gray-500"></i>65
+              Comments
+            </p>
+          </div>
+          <div class="flex flex-col p-2">
+            <h5 class="text-sm m-0 text-gray-800 hover:text-green-600 px-2">
+              Curabitur porttitor orci eget neque accumsan venenatis. Nunc
+              fermentum.
+            </h5>
+            <a href="#">
+              <p class="text-md font-medium text-green-500 px-2 py-2">
+                Read More
+                <i class="fa-solid fa-arrow-right ml-3" style="color: #00d85e"></i>
+              </p>
+            </a>
+          </div>
+        </div>
+      </div>
+      <!-- Main News  Card 1 1 Ends -->
+      <!-- Main News  Card 1 2 Starts -->
+      <div
+        class="flex flex-col justify-between items-center h-[494px] rounded-lg max-h-full w-full sm:w-full lg:w-1/3 shadow-sm hover:shadow-2xl transform duration-500">
+        <div
+          class="w-full h-4/6 rounded-t-lg bg-[url(https://tgihost.pages.dev/image?id=BQACAgUAAx0EfBziBwAD42WGqeHFrcX_NQmxqCouZfW5GhrTAAK4DgACOm45VGBERqBg_Ua9MwQ)] bg-cover">
+          <div class="bg-white inline-block text-center px-4 py-2 relative top-3/4 left-5 rounded-md">
+            <h2 class="text-base font-semibold text-gray-800">18</h2>
+            <p class="text-base text-gray-700">NOV</p>
+          </div>
+        </div>
+        <div
+          class="flex flex-col justify-evenly h-2/6 w-full rounded-lg border-b-2 border-l-2 border-r-2 border-gray-100">
+          <div class="flex flex-row p-2 gap-3 text-sm">
+            <p><i class="fa-solid fa-tag mx-2 text-gray-500"></i>Food</p>
+            <p><i class="fa-solid fa-user mx-2 text-gray-500"></i>By Admin</p>
+            <p>
+              <i class="fa-solid fa-message mx-2 text-gray-500"></i>65
+              Comments
+            </p>
+          </div>
+          <div class="flex flex-col p-2">
+            <h5 class="text-sm m-0 text-gray-800 hover:text-green-600 px-2">
+              Eget lobortis lorem lacinia. Vivamus pharetra semper,.
+            </h5>
+            <a href="#">
+              <p class="text-md font-medium text-green-500 px-2 py-2">
+                Read More
+                <i class="fa-solid fa-arrow-right ml-3" style="color: #00d85e"></i>
+              </p>
+            </a>
+          </div>
+        </div>
+      </div>
+      <!-- Main News  Card 1 2 Ends -->
+      <!-- Main News  Card 1 3 Starts -->
+      <div
+        class="flex flex-col justify-between items-center h-[494px] rounded-lg max-h-full w-full sm:w-full lg:w-1/3 shadow-sm hover:shadow-2xl transform duration-500">
+        <div
+          class="w-full h-4/6 rounded-t-lg bg-[url(https://tgihost.pages.dev/image?id=BQACAgUAAx0EfBziBwAD5GWGqgP3WxPJ6GvaJwUK9zPUN57pAAK7DgACOm45VDz7R_Mcyw_lMwQ)] bg-cover">
+          <div class="bg-white inline-block text-center px-4 py-2 relative top-3/4 left-5 rounded-md">
+            <h2 class="text-base font-semibold text-gray-800">18</h2>
+            <p class="text-base text-gray-700">NOV</p>
+          </div>
+        </div>
+        <div
+          class="flex flex-col justify-evenly h-2/6 w-full rounded-lg border-b-2 border-l-2 border-r-2 border-gray-100">
+          <div class="flex flex-row p-2 gap-3 text-sm">
+            <p><i class="fa-solid fa-tag mx-2 text-gray-500"></i>Food</p>
+            <p><i class="fa-solid fa-user mx-2 text-gray-500"></i>By Admin</p>
+            <p>
+              <i class="fa-solid fa-message mx-2 text-gray-500"></i>65
+              Comments
+            </p>
+          </div>
+          <div class="flex flex-col p-2">
+            <h5 class="text-sm m-0 text-gray-800 hover:text-green-600 px-2">
+              Maecenas blandit risus elementum mauris malesuada.
+            </h5>
+            <a href="#">
+              <p class="text-md font-medium text-green-500 px-2 py-2">
+                Read More
+                <i class="fa-solid fa-arrow-right ml-3" style="color: #00d85e"></i>
+              </p>
+            </a>
+          </div>
+        </div>
+      </div>
+      <!-- Main News  Card 1 3 Ends -->
+    </div>
+  </section>
+  <!-- News Section Ends Here -->
+
+  <!-- Client Review Section Starts Here -->
+  <section
+    class="flex flex-col sm:flex-col md:flex-row lg:flex-row flex-wrap justify-between items-center w-full min-h-[65vh] bg-gray-100 mt-8 py-4 px-4 lg:px-0">
+    <div
+      class="center_d flex flex-col sm:flex-col md:flex-row lg:flex-row justify-between items-center w-full h-1/4 mb-4 sm:mb-0 md:mb-0 lg:mb-0">
+      <h4 class="text-xl font-bold text-gray-800 mb-2 sm:mb-4 md:mb-4 lg:mb-4">
+        Client Testimonials
+      </h4>
+      <div class="flex flex-row gap-3 md:gap-2">
+        <i
+          class="fa-solid fa-arrow-left bg-white hover:bg-green-600 rounded-full p-3 cursor-pointer border-gray-200 text-gray-700 hover:text-white"></i>
+        <i
+          class="fa-solid fa-arrow-right bg-white hover:bg-green-600 rounded-full p-3 cursor-pointer border-gray-200 text-gray-700 hover:text-white"></i>
+      </div>
+    </div>
+    <div
+      class="center_d flex flex-col sm:flex-col md:flex-row lg:flex-row justify-between items-center w-full h-3/4 gap-4">
+      <!-- Main Div Card 1 Starts -->
+      <div
+        class="flex flex-col justify-center items-center w-full sm:w-full md:w-1/2 lg:w-1/3 bg-white rounded p-6 shadow-lg">
+        <div class="flex flex-col h-3/4 w-full pb-4">
+          <i class="fas fa-quote-right text-green-400 text-3xl mb-2"></i>
+          <p class="text-justify text-sm text-gray-700 leading-relaxed">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rem
+            sapiente voluptatum minus atque quod, consequatur, qui sit
+            perferendis eligendi est illum saepe! Voluptatibus ex magni ipsam
+            dignissimos distinctio, odit expedita?
           </p>
-          <div
-            class="flex flex-row text-gray-400 justify-start items-center gap-5 text-sm">
-            <h2
-              class="p-2 hover:border-b-[2px] transform duration-500 border-green-600">
-              (219) 555-0114
-            </h2>
-            <h2>or</h2>
-            <span
-              class="p-2 hover:border-b-[2px] transform duration-500 border-green-600"
-              >info@companywebsite.com</span
-            >
-          </div>
         </div>
-
-        <div
-          class="flex flex-col lg:flex-row h-auto lg:h-[52vh] w-11/12 lg:w-3/5 justify-evenly items-start gap-4 my-5 sm:my-1 lg:my-0">
-          <div
-            class="flex flex-col h-auto lg:h-[52vh] w-11/12 lg:w-3/5 justify-start gap-4">
-            <a class="text-white text-base font-medium">My Account</a>
-            <a class="text-gray-500 text-sm hover:text-white cursor-pointer"
-              >My Account</a
-            >
-            <a class="text-gray-500 text-sm hover:text-white cursor-pointer"
-              >Order History</a
-            >
-            <a class="text-gray-500 text-sm hover:text-white cursor-pointer"
-              >Shopping cart</a
-            >
-            <a class="text-gray-500 text-sm hover:text-white cursor-pointer"
-              >Wishlist</a
-            >
+        <div class="flex flex-row justify-between items-center w-full h-1/4 mt-4">
+          <div class="flex justify-between items-center">
+            <img class="w-16 h-16 md:w-14 md:h-14 rounded-full object-cover border-2 border-green-400 mb-4 md:mb-0"
+              src="https://images.pexels.com/photos/842567/pexels-photo-842567.jpeg?auto=compress&cs=tinysrgb&w=600"
+              alt="Profile Image" />
+            <div class="flex flex-col ml-2 md:ml-4">
+              <span class="text-sm font-medium text-gray-800">John Doe</span>
+              <span class="text-xs text-gray-500">CEO</span>
+            </div>
           </div>
-
-          <div class="flex flex-col h-full w-3/5 justify-start gap-4">
-            <a class="text-white text-base font-medium">Help</a>
-            <a class="text-gray-500 text-sm hover:text-white cursor-pointer"
-              >Contacts</a
-            >
-            <a class="text-gray-500 text-sm hover:text-white cursor-pointer"
-              >FAQs</a
-            >
-            <a class="text-gray-500 text-sm hover:text-white cursor-pointer"
-              >Terms & Condition</a
-            >
-            <a class="text-gray-500 text-sm hover:text-white cursor-pointer"
-              >Privacy Policy</a
-            >
-          </div>
-
-          <div class="flex flex-col h-full w-3/5 justify-start gap-4">
-            <a class="text-white text-base font-medium">Proxy</a>
-            <a class="text-gray-500 text-sm hover:text-white cursor-pointer"
-              >About</a
-            >
-            <a class="text-gray-500 text-sm hover:text-white cursor-pointer"
-              >Shop</a
-            >
-            <a class="text-gray-500 text-sm hover:text-white cursor-pointer"
-              >Product</a
-            >
-            <a class="text-gray-500 text-sm hover:text-white cursor-pointer"
-              >Track Order</a
-            >
-          </div>
-
-          <div class="flex flex-col h-full w-3/5 justify-start gap-4">
-            <a class="text-white text-base font-medium">Categories</a>
-            <a class="text-gray-500 text-sm hover:text-white cursor-pointer"
-              >Fruit & Vegetables</a
-            >
-            <a class="text-gray-500 text-sm hover:text-white cursor-pointer"
-              >Meat & Fish</a
-            >
-            <a class="text-gray-500 text-sm hover:text-white cursor-pointer"
-              >Bread & Bakery</a
-            >
-            <a class="text-gray-500 text-sm hover:text-white cursor-pointer"
-              >Beauty & Health</a
-            >
+          <div class="flex flex-row justify-center items-start ml-2 md:ml-4">
+            <i class="fa-solid fa-star" style="color: #fff700"></i>
+            <i class="fa-solid fa-star" style="color: #fff700"></i>
+            <i class="fa-solid fa-star" style="color: #fff700"></i>
+            <i class="fa-solid fa-star" style="color: #fff700"></i>
+            <i class="fa-solid fa-star" style="color: #fff700"></i>
           </div>
         </div>
       </div>
+      <!-- Main Div Card 1 Ends -->
+      <!-- Main Div Card 2 Starts -->
+      <div
+        class="flex flex-col justify-center items-center w-full sm:w-full md:w-1/2 lg:w-1/3 bg-white rounded p-6 shadow-lg">
+        <div class="flex flex-col h-3/4 w-full pb-4">
+          <i class="fas fa-quote-right text-green-400 text-3xl mb-2"></i>
+          <p class="text-justify text-sm text-gray-700 leading-relaxed">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rem
+            sapiente voluptatum minus atque quod, consequatur, qui sit
+            perferendis eligendi est illum saepe! Voluptatibus ex magni ipsam
+            dignissimos distinctio, odit expedita?
+          </p>
+        </div>
+        <div class="flex flex-row justify-between items-center w-full h-1/4 mt-4">
+          <div class="flex justify-between items-center">
+            <img class="w-16 h-16 md:w-14 md:h-14 rounded-full object-cover border-2 border-green-400 mb-4 md:mb-0"
+              src="https://images.pexels.com/photos/2381069/pexels-photo-2381069.jpeg?auto=compress&cs=tinysrgb&w=600"
+              alt="Profile Image" />
+            <div class="flex flex-col ml-2 md:ml-4">
+              <span class="text-sm font-medium text-gray-800">Emma John</span>
+              <span class="text-xs text-gray-500">Director</span>
+            </div>
+          </div>
+          <div class="flex flex-row justify-center items-start ml-2 md:ml-4">
+            <i class="fa-solid fa-star" style="color: #fff700"></i>
+            <i class="fa-solid fa-star" style="color: #fff700"></i>
+            <i class="fa-solid fa-star" style="color: #fff700"></i>
+            <i class="fa-solid fa-star" style="color: #fff700"></i>
+            <i class="fa-solid fa-star" style="color: #fff700"></i>
+          </div>
+        </div>
+      </div>
+      <!-- Main Div Card 2 Ends -->
+      <!-- Main Div Card 3 Starts -->
+      <div
+        class="flex flex-col justify-center items-center w-full sm:w-full md:w-1/2 lg:w-1/3 bg-white rounded p-6 shadow-lg">
+        <div class="flex flex-col h-3/4 w-full pb-4">
+          <i class="fas fa-quote-right text-green-400 text-3xl mb-2"></i>
+          <p class="text-justify text-sm text-gray-700 leading-relaxed">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rem
+            sapiente voluptatum minus atque quod, consequatur, qui sit
+            perferendis eligendi est illum saepe! Voluptatibus ex magni ipsam
+            dignissimos distinctio, odit expedita?
+          </p>
+        </div>
+        <div class="flex flex-row justify-between items-center w-full h-1/4 mt-4">
+          <div class="flex justify-between items-center">
+            <img class="w-16 h-16 md:w-14 md:h-14 rounded-full object-cover border-2 border-green-400 mb-4 md:mb-0"
+              src="https://images.pexels.com/photos/3756681/pexels-photo-3756681.jpeg?auto=compress&cs=tinysrgb&w=600"
+              alt="Profile Image" />
+            <div class="flex flex-col ml-2 md:ml-4">
+              <span class="text-sm font-medium text-gray-800">Anny Candy</span>
+              <span class="text-xs text-gray-500">Assistant CEO</span>
+            </div>
+          </div>
+          <div class="flex flex-row justify-center items-start ml-2 md:ml-4">
+            <i class="fa-solid fa-star" style="color: #fff700"></i>
+            <i class="fa-solid fa-star" style="color: #fff700"></i>
+            <i class="fa-solid fa-star" style="color: #fff700"></i>
+            <i class="fa-solid fa-star" style="color: #fff700"></i>
+            <i class="fa-solid fa-star" style="color: #fff700"></i>
+          </div>
+        </div>
+      </div>
+      <!-- Main Div Card 3 Ends -->
+    </div>
+  </section>
+  <!-- Client Review Section Ends Here -->
 
-      <!-- Copyright Section Starts Here -->
+  <!-- Brand Client Section Starts Here -->
+  <!-- Brand Client Section Starts Here -->
+  <section
+    class="center_d flex flex-wrap justify-around items-center h-max w-full my-10 py-5 px-4 lg:px-0 gap-10 md:gap-0">
+    <i class="fa-brands hover:text-green-600 fa-steam text-6xl text-gray-500"></i>
+    <i class="fa-brands hover:text-green-600 fa-wordpress text-6xl text-gray-500"></i>
+    <i class="fa-brands hover:text-green-600 fa-github text-6xl text-gray-500"></i>
+    <i class="fa-brands hover:text-green-600 fa-stripe text-6xl text-gray-500"></i>
+    <i class="fa-brands hover:text-green-600 fa-windows text-6xl text-gray-500"></i>
+    <i class="fa-brands hover:text-green-600 fa-wix text-6xl text-gray-500"></i>
+  </section>
+  <!-- Brand Client Section Ends Here -->
+  <!-- Newsletter Section Starts Here -->
+
+  <section
+    class="flex flex-col md:flex-row justify-around items-center h-auto md:h-[30vh] w-full mt-4 py-5 px-4 lg:px-8 gap-5 md:gap-0 bg-gray-50">
+    <div class="flex flex-col justify-center items-center w-full md:w-1/2 h-full">
+      <h4 class="text-3xl text-center font-bold text-gray-800 mb-4">
+        Subscribe to our Newsletter
+      </h4>
+      <p class="text-sm text-center text-gray-700 px-4 md:px-8 py-2">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam,
+        quos voluptatibus. Quisquam, quos voluptatibus.
+      </p>
+    </div>
+    <form class="flex flex-col md:flex-row justify-center items-center w-full md:w-1/2 gap-2">
+      <input type="email" id="email" placeholder="Enter your email"
+        class="bg-white border border-green-300 text-gray-900 md:w-64 mb-2 md:mb-0 md:me-4 text-sm rounded-lg focus:ring-green-500 focus:border-green-500 block w-full p-2.5"
+        required />
+      <button type="submit"
+        class="text-white bg-green-700 hover:bg-green-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full md:w-auto px-5 py-2.5">
+        Subscribe
+      </button>
+      <div class="flex flex-row justify-center items-center">
+        <i
+          class="fa-brands fa-facebook bg-white hover:bg-green-600 rounded-full p-3 cursor-pointer border-gray-200 text-gray-700 hover:text-white"></i>
+        <i
+          class="fa-brands fa-instagram bg-white hover:bg-green-600 rounded-full p-3 cursor-pointer border-gray-200 text-gray-700 hover:text-white"></i>
+        <i
+          class="fa-brands fa-twitter bg-white hover:bg-green-600 rounded-full p-3 cursor-pointer border-gray-200 text-gray-700 hover:text-white"></i>
+        <i
+          class="fa-brands fa-pinterest bg-white hover:bg-green-600 rounded-full p-3 cursor-pointer border-gray-200 text-gray-700 hover:text-white"></i>
+      </div>
+    </form>
+  </section>
+  <!-- Newsletter Section Endss Here -->
+
+  <!-- Footer Section Starts Here -->
+  <footer class="flex flex-col justify-between items-center bg-gray-900 w-full mb-0">
+    <div class="flex flex-col gap-4 lg:gap-0 lg:flex-row center_d h-auto lg:h-[52vh] px-2 pt-10 lg:pt-20">
+      <div
+        class="flex flex-col h-auto lg:h-[52vh] w-11/12 lg:w-2/5 justify-center lg:justify-start items-center lg:items-start gap-4">
+        <h1 class="text-white text-3xl">
+          <i class="fa-solid fa-leaf text-3xl text-green-600 mr-5"></i>Ecobazar
+        </h1>
+        <p class="text-gray-500 text-sm">
+          Morbi cursus porttitor enim lobortis molestie. <br />
+          Duis gravida turpis dui, eget bibendum magna <br />
+          congue nec.
+        </p>
+        <div class="flex flex-row text-gray-400 justify-start items-center gap-5 text-sm">
+          <h2 class="p-2 hover:border-b-[2px] transform duration-500 border-green-600">
+            (219) 555-0114
+          </h2>
+          <h2>or</h2>
+          <span class="p-2 hover:border-b-[2px] transform duration-500 border-green-600">info@companywebsite.com</span>
+        </div>
+      </div>
 
       <div
-        class="flex flex-col lg:flex-row center_d h-auto lg:h-[10vh] px-2 py-10 border-t-2 border-gray-500 justify-around lg:justify-between items-center mt-4 sm:mt-4 lg:mt-0">
-        <div class="flex flex-row justify-center items-center gap-5">
-          <a class="text-gray-500 text-sm hover:text-white cursor-pointer"
-            >©2024 Ecobazar. All Rights Reserved.</a
-          >
+        class="flex flex-col lg:flex-row h-auto lg:h-[52vh] w-11/12 lg:w-3/5 justify-evenly items-start gap-4 my-5 sm:my-1 lg:my-0">
+        <div class="flex flex-col h-auto lg:h-[52vh] w-11/12 lg:w-3/5 justify-start gap-4">
+          <a class="text-white text-base font-medium">My Account</a>
+          <a class="text-gray-500 text-sm hover:text-white cursor-pointer">My Account</a>
+          <a class="text-gray-500 text-sm hover:text-white cursor-pointer">Order History</a>
+          <a class="text-gray-500 text-sm hover:text-white cursor-pointer">Shopping cart</a>
+          <a class="text-gray-500 text-sm hover:text-white cursor-pointer">Wishlist</a>
         </div>
 
-        <div class="flex flex-row justify-center items-center gap-5 mt-4 sm:mt-4 lg:mt-0">
-          <i class="fa-brands fa-apple-pay text-3xl text-white"></i>
-          <i class="fa-brands fa-cc-visa text-3xl text-white"></i>
-          <i class="fa-brands fa-cc-discover text-3xl text-white"></i>
-          <i class="fa-brands fa-cc-mastercard text-3xl text-white"></i>
-          <i class="fa-brands fa-cc-paypal text-3xl text-white"></i>
+        <div class="flex flex-col h-full w-3/5 justify-start gap-4">
+          <a class="text-white text-base font-medium">Help</a>
+          <a class="text-gray-500 text-sm hover:text-white cursor-pointer">Contacts</a>
+          <a class="text-gray-500 text-sm hover:text-white cursor-pointer">FAQs</a>
+          <a class="text-gray-500 text-sm hover:text-white cursor-pointer">Terms & Condition</a>
+          <a class="text-gray-500 text-sm hover:text-white cursor-pointer">Privacy Policy</a>
+        </div>
+
+        <div class="flex flex-col h-full w-3/5 justify-start gap-4">
+          <a class="text-white text-base font-medium">Proxy</a>
+          <a class="text-gray-500 text-sm hover:text-white cursor-pointer">About</a>
+          <a class="text-gray-500 text-sm hover:text-white cursor-pointer">Shop</a>
+          <a class="text-gray-500 text-sm hover:text-white cursor-pointer">Product</a>
+          <a class="text-gray-500 text-sm hover:text-white cursor-pointer">Track Order</a>
+        </div>
+
+        <div class="flex flex-col h-full w-3/5 justify-start gap-4">
+          <a class="text-white text-base font-medium">Categories</a>
+          <a class="text-gray-500 text-sm hover:text-white cursor-pointer">Fruit & Vegetables</a>
+          <a class="text-gray-500 text-sm hover:text-white cursor-pointer">Meat & Fish</a>
+          <a class="text-gray-500 text-sm hover:text-white cursor-pointer">Bread & Bakery</a>
+          <a class="text-gray-500 text-sm hover:text-white cursor-pointer">Beauty & Health</a>
         </div>
       </div>
-      <!-- Copyright Section Ends Here -->
-    </footer>
-    <script src="script.js"></script>
-  </body>
+    </div>
+
+    <!-- Copyright Section Starts Here -->
+
+    <div
+      class="flex flex-col lg:flex-row center_d h-auto lg:h-[10vh] px-2 py-10 border-t-2 border-gray-500 justify-around lg:justify-between items-center mt-4 sm:mt-4 lg:mt-0">
+      <div class="flex flex-row justify-center items-center gap-5">
+        <a class="text-gray-500 text-sm hover:text-white cursor-pointer">©2024 Ecobazar. All Rights Reserved.</a>
+      </div>
+
+      <div class="flex flex-row justify-center items-center gap-5 mt-4 sm:mt-4 lg:mt-0">
+        <i class="fa-brands fa-apple-pay text-3xl text-white"></i>
+        <i class="fa-brands fa-cc-visa text-3xl text-white"></i>
+        <i class="fa-brands fa-cc-discover text-3xl text-white"></i>
+        <i class="fa-brands fa-cc-mastercard text-3xl text-white"></i>
+        <i class="fa-brands fa-cc-paypal text-3xl text-white"></i>
+      </div>
+    </div>
+    <!-- Copyright Section Ends Here -->
+  </footer>
+  <script src="script.js"></script>
+</body>
+
 </html>
