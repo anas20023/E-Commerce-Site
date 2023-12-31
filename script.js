@@ -6,8 +6,8 @@ let main_newsltr_div = document.querySelector('#newsltr_main');
 let click_sm_nav = document.querySelector('#nav_sm');
 let show_sm_nav = document.querySelector('#hidden_nav');
 let cross_sm_nav = document.querySelector('#cross_nav');
-let days = document.querySelector('#days');
-let hours = document.querySelector('#hrs');
+let dys = document.querySelector('#days');
+let hrs = document.querySelector('#hrs');
 let mints = document.querySelector('#mins');
 let secs = document.querySelector('#secs');
 
@@ -34,7 +34,7 @@ cross_sm_nav.addEventListener('click', () => {
 
 /// For Count Down of Banner Section
 
-const targetDate = new Date('December 31, 2023 23:59:59').getTime();
+const targetDate = new Date('December 31, 2024 23:59:59').getTime();
 
 const countdownInterval = setInterval(updateCountdown, 1000);
 
@@ -50,8 +50,8 @@ function updateCountdown() {
   );
   const minutes = Math.floor((remainingTime % (1000 * 60 * 60)) / (1000 * 60));
   const seconds = Math.floor((remainingTime % (1000 * 60)) / 1000);
-  days.innerHTML = `${days}`;
-  hours.innerHTML = `${hours}`;
+  dys.innerHTML = `${days}`;
+  hrs.innerHTML = `${hours}`;
   mints.innerHTML = `${minutes}`;
   secs.innerHTML = `${seconds}`;
 
@@ -61,3 +61,5 @@ function updateCountdown() {
     countdownElement.innerHTML = 'Countdown expired!';
   }
 }
+
+console.log(targetDate);
