@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon"
+        href="https://tgihost.pages.dev/image?id=BQACAgUAAx0EfBziBwAD52WGrU4Twqo083GyHnNTg-9ISWgmAALHDgACOm45VJXHifX41FQrMwQ" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.lineicons.com/4.0/lineicons.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="/outputt/output.css" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+    <title> &nbsp; Ecobazar</title>
+</head>
+<header>
+    <!-- Top Location and Login SignUp Section -->
+    <div class="location_login">
+        <div class="location">
+            <a href="https://maps.app.goo.gl/sXUpuHKUYU8vfPZD6" target="_blank" class="loc_ico" rel="noopener">
+                <i class="fa-solid fa-location-dot loc_i"></i>
+                <h5 class="loc_txt">Lincoln- 348w-48, Illinois, Chicago, USA</h5>
+            </a>
+        </div>
+        <!-- Login/Sign UP -->
+        <div class="sign_sec">
+            <select name="" id="" class="slct">
+                <option value="english">Eng</option>
+                <option value="bangla">BAN</option>
+            </select>
+            <select name="" id="" class="slct">
+                <option value="usd">USD</option>
+                <option value="tk">Taka</option>
+            </select>
+            <a href="#" class="login" id="button" onclick="login_div()">Login / Sign Up</a>
+        </div>
+    </div>
+    <hr />
+
+    <!-- Top Logo, Search Section -->
+    <div class="navbar_cont">
+        <a href="#">
+            <div class="logo">
+                <img src="https://tgihost.pages.dev/image?id=BQACAgUAAx0EfBziBwAD52WGrU4Twqo083GyHnNTg-9ISWgmAALHDgACOm45VJXHifX41FQrMwQ"
+                    class="logo_img" alt="logo" />
+                <h1 class="logo_h">Ecobazar</h1>
+            </div>
+        </a>
+        <div class="search">
+            <input type="text" class="search_input" placeholder="Search" />
+            <button class="search_btn"><i class="fas fa-search"></i></button>
+        </div>
+        <div class="addto_cart">
+            <a href="#" class="heart_icon">
+                <i class="fa-regular fa-heart loved"></i></a>
+            <div class="line"></div>
+            <a href="#" class="heart_icon">
+                <div id="cart_show" class="cart_count">
+                    <i class="fa-solid fa-basket-shopping cartico"></i>
+                    <span class="count">2</span>
+                </div>
+            </a>
+            <div class="scart">
+                <p class="s_cart_h">Shooping cart:</p>
+                <h2 class="price">$57.00</h2>
+            </div>
+        </div>
+    </div>
+    <div id="cart_hid"
+        class="hidden flex-col justify-between items-start gap-3 font-bold py-10 w-4/5 md:w-1/4 h-screen p-2 text-gray-800 bg-white z-40 absolute top-0 -right-full transform duration-400 rounded-md shadow-lg">
+        <i id="cross_cart"
+            class="fa-solid fa-xmark text-gray-800 text-xl font-black cursor-pointer absolute top-3 left-6"></i>
+        <h2 class="text-lg text-center py-4 border-b-2 w-full">Shopping cart</h2>
+        <div class="flex flex-col justify-start items-center w-full h-full gap-2">
+            <!-- Items to Add -->
+            <div class="flex flex-row justify-between items-center w-full h-24 px-4 border-b-2 border-gray-200">
+                <img class="w-16 h-16 object-cover drop-shadow-md"
+                    src="https://tgihost.pages.dev/image?id=BQACAgUAAx0EfBziBwAD1GWGppZNzTPKQbXejS0LTA37TDPDAAKmDgACOm45VPo5xG0aiDhuMwQ"
+                    alt="">
+                <div class="flex flex-col justify-center items-start ml-2 h-full w-3/5">
+                    <h1 class="text-lg font-medium">Green Apple</h1>
+                    <p class="text-base font-normal">$15.00</p>
+                </div>
+                <div class="flex flex-row justify-evenly items-center text-base h-full w-1/5">
+                    <button class="p-2 cursor-pointer">-</button>
+                    <p class="text-sm font-bold">x1</p>
+                    <button class="p-2 cursor-pointer">+</button>
+                </div>
+
+            </div>
+            <!-- Items to Add -->
+            <!-- Items to Add -->
+            <div class="flex flex-row justify-between items-center w-full h-24 px-4 border-b-2 border-gray-200">
+                <img class="w-16 h-16 object-cover drop-shadow-md"
+                    src="https://tgihost.pages.dev/image?id=BQACAgUAAx0EfBziBwAD3GWGp0f-ziTMhHZl1mAdILJm0odeAAKuDgACOm45VLxDmcYGeZwLMwQ"
+                    alt="">
+                <div class="flex flex-col justify-center items-start ml-2 h-full w-3/5">
+                    <h1 class="text-lg font-medium">Green Capsicum</h1>
+                    <p class="text-base font-normal">$9.00</p>
+                </div>
+                <div class="flex flex-row justify-evenly items-center text-base h-full w-1/5">
+                    <button class="p-2 cursor-pointer">-</button>
+                    <p class="text-sm font-bold">x1</p>
+                    <button class="p-2 cursor-pointer">+</button>
+                </div>
+
+            </div>
+            <!-- Items to Add -->
+        </div>
+        <div class="flex flex-col w-full px-4 gap-2">
+            <div class="flex flex-row justify-between items-center">
+                <h2 class="text-base font-normal">2 Product</h2>
+                <h2>$24.00</h2>
+            </div>
+            <button
+                class="w-full h-10 py-2 text-base font-normal px-4 bg-green-600 rounded-full text-white">Checkout</button>
+            <button class="w-full h-10 py-2 text-base font-medium px-4  bg-green-100 rounded-full text-green-600">Goto
+                Cart</button>
+
+        </div>
+
+    </div>
+</header>
+
+<body>
+    <div class="nav_cont">
+        <nav class="navbar">
+            <i id="nav_sm"
+                class="fa-solid fa-bars text-lg font-semibold block sm:block md:hidden lg:hidden text-green-600 cursor-pointer"></i>
+            <ul>
+                <li>
+                    <a href="#" class="active_home">Home</a>
+                </li>
+                <li class="btns_top">
+                    <a href="#">Shop<i class="fa-solid fa-angle-down nav_arr"></i></a>
+                    <div id="shop_hbr"
+                        class="hidden  text-lg flex-col w-44 h-[200px] bg-gray-900 absolute top-48 rounded-md justify-center items-center">
+                        <a class="w-full flex justify-center items-center rounded-t-md h-1/3 py-2 hover:bg-slate-800"
+                            href="#">Fresh
+                            Fish</a>
+                        <a class="w-full flex justify-center items-center h-1/3 py-2 hover:bg-slate-800 text-center"
+                            href="#">Fresh
+                            Meat</a>
+                        <a class="w-full flex justify-center items-center rounded-b-md h-1/3 py-2 hover:bg-slate-800 text-center"
+                            href="#">Fresh Vegitables</a>
+                    </div>
+                </li>
+                <li class="btns_top">
+                    <a href="#">Pages<i class="fa-solid fa-angle-down nav_arr"></i></a>
+                    <div id="page_hbr"
+                        class="hidden text-lg flex-col w-44 h-[200px] bg-gray-900 absolute top-48 rounded-md justify-center items-center">
+                        <a class="w-full flex justify-center items-center rounded-t-md h-1/3 py-2 hover:bg-slate-800"
+                            href="#">Produts</a>
+                        <a class="w-full flex justify-center items-center h-1/3 py-2 hover:bg-slate-800 text-center"
+                            href="#">Reviews</a>
+                        <a class="w-full flex justify-center items-center rounded-b-md h-1/3 py-2 hover:bg-slate-800 text-center"
+                            href="#">Hot Deals</a>
+                    </div>
+                </li>
+                <li class="btns_top">
+                    <a href="#">Blog</a>
+                </li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+            <div class="call_now_top">
+                <a href="tel:+(219) 555-0114"
+                    class="call_now absolute right-5 sm:absolute sm:right-5 md:relative lg:relative"><i
+                        class="fa-solid fa-phone call_ico"></i><span class="nmbr">(219) 555-0114</span></a>
+            </div>
+        </nav>
+        <div id="hidden_nav"
+            class="flex flex-col md:hidden lg:hidden justify-start items-start pl-40 text-4xl gap-3 font-bold py-10 w-4/5 h-screen text-white bg-gray-800 z-40 absolute -left-full transform duration-200">
+            <i id="cross_nav"
+                class="fa-solid fa-xmark text-white text-xl font-black cursor-pointer absolute top-3 left-6"></i>
+
+            <a href="#">Home</a>
+            <a href="#">Shop <i class="fa-solid fa-angle-down nav_arr"></i></a>
+            <a href="#">Pages <i class="fa-solid fa-angle-down nav_arr"></i></a>
+            <a href="#">Blog </a>
+            <a href="#">About Us</a>
+            <a href="#">Contact Us</a>
+        </div>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
