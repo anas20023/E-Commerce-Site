@@ -229,58 +229,59 @@
     </div>
     <!-- Newsletter Popup Section Ends -->
     <!-- Contact Main Cotainer Div Starts -->
-    <section class="h-[60vh] center_d flex flex-col md:flex-row justify-center items-center my-12 gap-2">
-        <div class="h-full w-1/4 bg-white rounded-lg shadow-xl flex flex-col justify-evenly items-center px-1">
-            <div class="flex flex-col justify-center items-center border-b-2 border-gray-200 p-2 gap-2">
+    <section class="md:h-[60vh] center_d flex flex-col md:flex-row justify-center items-center my-12 gap-4">
+        <div
+            class="h-full w-full md:w-1/4 bg-white rounded-lg shadow-xl flex flex-col justify-evenly items-center px-1">
+            <div class="flex flex-col justify-center items-center border-b-2 border-gray-200 p-2 gap-2 w-full">
                 <i class="fa-regular fa-map text-4xl font-semibold text-green-600"></i>
                 <h2 class="text-center text-sm font-medium">2715 Ash Dr. San Jose, South <br> Dakota 83475</h2>
-
             </div>
-            <div class="flex flex-col justify-center items-center border-b-2 border-gray-200 p-2 gap-2">
+            <div class="flex flex-col justify-center items-center border-b-2 border-gray-200 p-2 gap-2 w-full">
                 <i class="fa-regular fa-paper-plane text-4xl font-semibold text-green-600"></i>
                 <h2 class="text-center text-sm font-medium">Proxy@gmail.com <br> Help.proxy@gmail.com</h2>
-
             </div>
-            <div class="flex flex-col justify-center items-center border-b-2 border-gray-200 p-2 gap-2">
+            <div class="flex flex-col justify-center items-center border-b-2 border-gray-200 p-2 gap-2 w-full">
                 <i class="fa-regular fa-phone text-4xl font-semibold text-green-600"></i>
                 <h2 class="text-center text-sm font-medium">(219) 555-0114 <br> (164) 333-0487</h2>
-
             </div>
         </div>
         <div
-            class="h-full w-3/4 bg-white rounded-lg shadow-xl flex flex-col justify-start items-start p-8 text-gray-900">
+            class="h-full w-full md:w-3/4 bg-white rounded-lg shadow-xl flex flex-col justify-start items-start p-8 text-gray-900">
             <h2 class="font-semibold text-xl">Just Say Hello!</h2>
             <p class="font-medium text-xs my-2 !text-gray-500">Do you fancy saying hi to me or you want to get started
                 with
                 your <br> project and you need my help? Feel free to contact me.</p>
-            <form action="#" class="flex flex-wrap flex-col justify-start items-start w-full my-5"
+            <form action="#" class="flex flex-wrap flex-col justify-start items-start w-full my-5 gap-2"
                 onsubmit="return validateForm()">
                 <div class="flex flex-row w-full gap-4">
                     <input type="text" id="default-input"
-                        class="w-1/2 bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block  p-2.5">
-                        <input type="text" id="default-input"
-                        class="w-1/2 bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block  p-2.5">
+                        class="w-1/2 md:w-full bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block p-2.5"
+                        placeholder="Your Name" required>
+                    <input type="text" id="default-input"
+                        class="w-1/2 md:w-full bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block p-2.5"
+                        placeholder="Your email address" required>
                 </div>
-                <input type="text" name="msg_Sub" id="msg_Sub"
-                    class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none focus:outline-none focus:ring-0 focus:border-blue-600 peer"
-                    placeholder="Your Email" required />
+                <input type="text" id="default-input"
+                    class="w-full bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block p-2.5"
+                    placeholder="Your Subject" required>
                 <textarea id="message" rows="4"
                     class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500"
-                    placeholder="Write your thoughts here..."></textarea>
+                    placeholder="Write your thoughts here..." required></textarea>
 
                 <button type="submit"
-                    class="py-2 px-4 mt-4 bg-blue-600 text-white rounded focus:outline-none">Submit</button>
+                    class="py-2.5 px-8 mt-4 bg-green-600 text-white rounded-full text-sm focus:outline-none">Send
+                    Message</button>
             </form>
-
         </div>
-
     </section>
-    <section class="bg-white w-full h-[40vh] flex flex-col justify-center items-center">
+
+    <!-- Map Iframe section Starts Here -->
+    <section class="bg-white w-full md:h-[40vh] flex flex-col justify-center items-center">
         <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3650.189741737926!2d90.35453857479385!3d23.811850986415447!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755c12015382851%3A0x3ceca92fcf1a72d2!2sBangladesh%20University%20of%20Business%20and%20Technology%20(BUBT)!5e0!3m2!1sen!2sbd!4v1704286847507!5m2!1sen!2sbd"
             class="w-full h-full border-0" allowfullscreen="" loading="lazy" referrerpolicy="origin"></iframe>
-
     </section>
+    <!-- Map Iframe section Endss Here -->
     <!-- Contact Main Cotainer Div Endss -->
     <!-- Newsletter Section Starts Here -->
     <section
