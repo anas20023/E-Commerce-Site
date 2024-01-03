@@ -13,6 +13,9 @@ let secs = document.querySelector('#secs');
 const btns_top = document.querySelectorAll('.btns_top');
 const shop_dpd = document.getElementById('shop_hbr');
 const page_dpd = document.getElementById('page_hbr');
+const Cart_menu = document.querySelector('#cart_hid');
+const Cart_cross = document.querySelector('#cross_cart');
+const Cart_ico = document.querySelector('#cart_show');
 // For Newsletter
 
 nwesltr_close.addEventListener('click', () => {
@@ -90,4 +93,17 @@ btns_top.forEach((btn) => {
       page_dpd.classList.add('hidden');
     }
   });
+});
+
+/// For Shopping Cart
+
+Cart_ico.addEventListener('click', () => {
+  Cart_menu.classList.remove('hidden');
+  Cart_menu.classList.add('flex');
+  Cart_menu.classList.add('!right-0');
+});
+Cart_cross.addEventListener('click', () => {
+  Cart_menu.classList.add('hidden');
+  Cart_menu.classList.remove('flex');
+  Cart_menu.classList.remove('!right-0');
 });
