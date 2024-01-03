@@ -8,3 +8,26 @@
 .newsletter {
   @apply absolute bg-white top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 duration-1000 h-[470px] sm:h-[470px] lg:h-[400px] w-[430px] sm:w-[548px] md:w-[648px] lg:w-[870px] rounded-md shadow-2xl flex flex-row justify-between items-center p-2 z-50 gap-3;
 }
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
