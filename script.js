@@ -10,6 +10,8 @@ let dys = document.querySelector('#days');
 let hrs = document.querySelector('#hrs');
 let mints = document.querySelector('#mins');
 let secs = document.querySelector('#secs');
+let shop_dpd=document.querySelector("#shop_hbr");
+let btns_top=document.querySelectorAll(".btns_top");
 
 // For Newsletter
 
@@ -63,3 +65,7 @@ function updateCountdown() {
 }
 
 console.log(targetDate);
+
+
+// For DropDown Menu
+console.log(btns_top);

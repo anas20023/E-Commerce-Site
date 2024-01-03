@@ -10,6 +10,7 @@
     integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="https://cdn.lineicons.com/4.0/lineicons.css" />
+  <script src="https://cdn.tailwindcss.com"></script>
   <link href="/outputt/output.css" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
   <title>Ecobazar &nbsp; Home</title>
@@ -73,47 +74,35 @@
 <body class="flex flex-col flex-wrap">
   <div class="nav_cont">
     <nav class="navbar">
-      <i id="nav_sm" class="fa-solid fa-bars text-lg font-semibold block sm:block md:hidden lg:hidden text-green-600 cursor-pointer"></i>
+      <i id="nav_sm"
+        class="fa-solid fa-bars text-lg font-semibold block sm:block md:hidden lg:hidden text-green-600 cursor-pointer"></i>
       <ul>
-          <li>
-              <a href="#" class="active_home">Home</a>
-          </li>
-          <li class="dropdown" @click="isOpen = !isOpen">
-              <a href="#">Shop <i class="fa-solid fa-angle-down nav_arr"></i></a>
-              <div x-show="isOpen" @click.away="isOpen = false" class="dropdown-content">
-                  <!-- Dropdown content -->
-                  <a href="#">Option 1</a>
-                  <a href="#">Option 2</a>
-                  <a href="#">Option 3</a>
-              </div>
-          </li>
-          <li class="dropdown" @click="isOpen = !isOpen">
-              <a href="#">Pages <i class="fa-solid fa-angle-down nav_arr"></i></a>
-              <div x-show="isOpen" @click.away="isOpen = false" class="dropdown-content">
-                  <!-- Dropdown content -->
-                  <a href="#">Option 1</a>
-                  <a href="#">Option 2</a>
-                  <a href="#">Option 3</a>
-              </div>
-          </li>
-          <li class="dropdown" @click="isOpen = !isOpen">
-              <a href="#">Blog <i class="fa-solid fa-angle-down nav_arr"></i></a>
-              <div x-show="isOpen" @click.away="isOpen = false" class="dropdown-content">
-                  <!-- Dropdown content -->
-                  <a href="#">Option 1</a>
-                  <a href="#">Option 2</a>
-                  <a href="#">Option 3</a>
-              </div>
-          </li>
-          <li><a href="#">About Us </a></li>
-          <li><a href="#">Contact Us</a></li>
+        <li>
+          <a href="#" class="active_home">Home</a>
+        </li>
+        <li class="btns_top">
+          <a href="#">Shop <i class="fa-solid fa-angle-down nav_arr"></i></a>
+          <div id="shop_hbr" class="hidden flex-col w-44 h-[200px] bg-gray-900 absolute top-48 rounded-md justify-center items-center">
+            <a class="w-full flex justify-center items-center rounded-t-md h-1/3 py-2 hover:bg-slate-800" href="#">Item 1</a>
+            <a class="w-full flex justify-center items-center h-1/3 py-2 hover:bg-slate-800 text-center" href="#">Item 2</a>
+            <a class="w-full flex justify-center items-center rounded-b-md h-1/3 py-2 hover:bg-slate-800 text-center" href="#">Item 3</a>
+          </div>
+        </li>
+        <li>
+          <a href="#">Pages <i class="fa-solid fa-angle-down nav_arr"></i></a>
+        </li>
+        <li>
+          <a href="#">Blog <i class="fa-solid fa-angle-down nav_arr"></i></a>
+        </li>
+        <li><a href="#">About Us </a></li>
+        <li><a href="#">Contact Us</a></li>
       </ul>
       <div class="call_now_top">
-          <a href="tel:+(219) 555-0114" class="call_now absolute right-5 sm:absolute sm:right-5 md:relative lg:relative">
-              <i class="fa-solid fa-phone call_ico"></i><span class="nmbr">(219) 555-0114</span>
-          </a>
+        <a href="tel:+(219) 555-0114"
+          class="call_now absolute right-5 sm:absolute sm:right-5 md:relative lg:relative"><i
+            class="fa-solid fa-phone call_ico"></i><span class="nmbr">(219) 555-0114</span></a>
       </div>
-  </nav>
+    </nav>
     <div id="hidden_nav"
       class="flex flex-col md:hidden lg:hidden justify-start items-start pl-40 text-4xl gap-3 font-bold py-10 w-4/5 h-screen text-white bg-gray-800 z-40 absolute -left-full transform duration-200">
       <i id="cross_nav"
@@ -1146,7 +1135,6 @@
     </div>
     <!-- Copyright Section Ends Here -->
   </footer>
-  <script src="https://cdn.jsdelivr.net/npm/alpinejs@2.8.2/dist/alpine.js" defer></script>
   <script src="script.js"></script>
 </body>
 
