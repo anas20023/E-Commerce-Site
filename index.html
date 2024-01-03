@@ -70,13 +70,14 @@
     </div>
   </div>
   <div id="cart_hid"
-    class="hidden flex-col justify-start items-start gap-3 font-bold py-10 w-4/5 md:w-1/4 h-screen text-gray-800 bg-white z-40 absolute top-14 -right-full transform duration-400 rounded-md shadow-lg">
+    class="hidden flex-col justify-between items-start gap-3 font-bold py-10 w-4/5 md:w-1/4 h-screen p-2 text-gray-800 bg-gray-50 z-40 absolute top-0 -right-full transform duration-400 rounded-md shadow-lg">
     <i id="cross_cart"
       class="fa-solid fa-xmark text-gray-800 text-xl font-black cursor-pointer absolute top-3 left-6"></i>
     <h2 class="text-lg text-center py-4 border-b-2 w-full">Shopping cart</h2>
-    <div class="flex flex-col justify-start items-center w-full h-full p-2 gap-2">
+    <div class="flex flex-col justify-start items-center w-full h-full gap-2">
       <!-- Items to Add -->
-      <div class="flex flex-row justify-between items-center w-full h-28 rounded-md px-4 bg-gray-100 hover:shadow-md">
+      <div
+        class="flex flex-row justify-between items-center w-full h-24 px-4 border-b-2 border-gray-200">
         <img class="w-16 h-16 object-cover drop-shadow-md"
           src="https://tgihost.pages.dev/image?id=BQACAgUAAx0EfBziBwAD1GWGppZNzTPKQbXejS0LTA37TDPDAAKmDgACOm45VPo5xG0aiDhuMwQ"
           alt="">
@@ -93,7 +94,8 @@
       </div>
       <!-- Items to Add -->
       <!-- Items to Add -->
-      <div class="flex flex-row justify-between items-center w-full h-28 rounded-md px-4 bg-gray-100 hover:shadow-md">
+      <div
+        class="flex flex-row justify-between items-center w-full h-24 px-4 border-b-2 border-gray-200">
         <img class="w-16 h-16 object-cover drop-shadow-md"
           src="https://tgihost.pages.dev/image?id=BQACAgUAAx0EfBziBwAD3GWGp0f-ziTMhHZl1mAdILJm0odeAAKuDgACOm45VLxDmcYGeZwLMwQ"
           alt="">
@@ -109,6 +111,15 @@
 
       </div>
       <!-- Items to Add -->
+    </div>
+    <div class="flex flex-col w-full px-4 gap-2">
+      <div class="flex flex-row justify-between items-center">
+        <h2 class="text-base font-normal">2 Product</h2>
+        <h2>$24.00</h2>
+      </div>
+      <button class="w-full h-10 py-2 text-base font-normal px-4 bg-green-600 rounded-full text-white">Checkout</button>
+      <button class="w-full h-10 py-2 text-base font-medium px-4  bg-green-100 rounded-full text-green-600">Goto Cart</button>
+
     </div>
 
   </div>

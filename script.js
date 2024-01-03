@@ -101,9 +101,11 @@ Cart_ico.addEventListener('click', () => {
   Cart_menu.classList.remove('hidden');
   Cart_menu.classList.add('flex');
   Cart_menu.classList.add('!right-0');
+  document.body.classList.add('overflow-y-hidden');
 });
 Cart_cross.addEventListener('click', () => {
   Cart_menu.classList.add('hidden');
   Cart_menu.classList.remove('flex');
   Cart_menu.classList.remove('!right-0');
+  document.body.classList.remove('overflow-y-hidden');
 });
