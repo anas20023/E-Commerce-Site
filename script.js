@@ -10,9 +10,9 @@ let dys = document.querySelector('#days');
 let hrs = document.querySelector('#hrs');
 let mints = document.querySelector('#mins');
 let secs = document.querySelector('#secs');
-let shop_dpd=document.querySelector("#shop_hbr");
-let btns_top=document.querySelectorAll(".btns_top");
-
+const btns_top = document.querySelectorAll('.btns_top');
+const shop_dpd = document.getElementById('shop_hbr');
+const page_dpd = document.getElementById('page_hbr');
 // For Newsletter
 
 nwesltr_close.addEventListener('click', () => {
@@ -64,8 +64,30 @@ function updateCountdown() {
   }
 }
 
-console.log(targetDate);
-
-
 // For DropDown Menu
-console.log(btns_top);
+
+btns_top.forEach((btn) => {
+  btn.addEventListener('mouseover', () => {
+    const buttonText = btn.querySelector('a').innerText.trim();
+
+    if (buttonText === 'Shop') {
+      shop_dpd.classList.remove('hidden');
+      shop_dpd.classList.add('flex');
+    } else if (buttonText === 'Pages') {
+      page_dpd.classList.remove('hidden');
+      page_dpd.classList.add('flex');
+    }
+  });
+
+  btn.addEventListener('mouseout', () => {
+    const buttonText = btn.querySelector('a').innerText.trim();
+
+    if (buttonText === 'Shop') {
+      shop_dpd.classList.remove('flex');
+      shop_dpd.classList.add('hidden');
+    } else if (buttonText === 'Pages') {
+      page_dpd.classList.remove('flex');
+      page_dpd.classList.add('hidden');
+    }
+  });
+});
